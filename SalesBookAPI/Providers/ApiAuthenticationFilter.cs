@@ -105,7 +105,7 @@ namespace SalesBookAPI.Providers
             string strDec = token.First();
             if (string.IsNullOrEmpty(strDec)) return null;
             if (strDec.Trim().Length == 0) return null;
-            Token r = new Token(StaticGeneral.DecryptedText(strDec));
+            Token r = new Token(strDec);
             //Token r = new Token(strDec);
             
             return r;

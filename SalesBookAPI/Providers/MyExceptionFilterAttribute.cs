@@ -34,7 +34,7 @@ namespace SalesBookAPI.Providers
                 if (!(actionExecutedContext.ActionContext.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any() || actionExecutedContext.ActionContext.ControllerContext.ControllerDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any()))
                 {
                     Token t = actionExecutedContext.Request.Properties[SiteConfig.LoginKeyName] as Token;
-                    DeviceCode = t.DeviceCode.ToString();
+                    DeviceCode = t.UserCode.ToString();
                 }
                 StringBuilder sbHeader = new StringBuilder();
                 sbHeader.AppendLine(actionExecutedContext.Request.Headers.ToString());

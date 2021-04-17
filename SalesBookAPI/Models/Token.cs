@@ -10,7 +10,6 @@ namespace SalesBookAPI.Models
     public class Token
     {
         #region "Variable,Properties,Constructor"
-        public string DeviceCode = "";
         string Separator = "$#%";
         string strErr = "";
 
@@ -26,7 +25,7 @@ namespace SalesBookAPI.Models
             set;
         }
 
-        public string Password
+        public string UserPassword
         {
             get;
             set;
@@ -37,49 +36,38 @@ namespace SalesBookAPI.Models
             get;
             set;
         }
-       
+
         public string SessionID
         {
             get;
             set;
         }
 
-        public string LoginCode
-        {
-            get;
-            set;
-        }
-
-        public string LocationCode
-        {
-            get;
-            set;
-        }
 
         public Token()
         {
 
         }
-        
+
         public Token(string SerializeString)
         {
+            SerializeString = StaticGeneral.DecryptedText(SerializeString);
             string[] str = SerializeString.Split(new string[] { Separator }, StringSplitOptions.None);
 
             UserCode = str[0];
             UserName = str[1];
-            Password = str[2];
+            UserPassword = str[2];
             ExpiryDate = str[3];
             SessionID = str[4];
-            DeviceCode = str[5];
-            LoginCode = str[6];
-            LocationCode = str[7];
+
         }
         #endregion
 
         #region "Helpers"
         public string GetTokenSerialized()
         {
-            return UserCode + Separator +  UserName + Separator + Password + Separator + ExpiryDate + Separator + SessionID + Separator + DeviceCode + Separator + LoginCode + Separator + LocationCode;
+            return
+                StaticGeneral.EncryptedText(UserCode + Separator + UserName + Separator + UserPassword + Separator + ExpiryDate + Separator + SessionID);
         }
 
         public string GetError()
@@ -93,15 +81,12 @@ namespace SalesBookAPI.Models
             try
             {
                 Dictionary<string, object> Para = new Dictionary<string, object>();
-                Para.Add("@UserCode", UserCode);
-                Para.Add("@DeviceCode", DeviceCode);
-                Para.Add("@LocationCode", LocationCode);
-                Para.Add("@SessionID", SessionID);
-                
-                DataTable dt = StaticGeneral.GetDataTable("pAuthenticateTokenForAasanAPI", Para);
-                if (dt.Rows.Count == 1)
+                Para.Add("UserCode", UserCode);
+                Para.Add("UserPassword", StaticGeneral.EncryptedText(UserPassword));
+                Para.Add("SessionID", SessionID);
+                DataTable dt = StaticGeneral.GetDataTable("wsp_AuthenticateUserToken", Para);
+                if (dt.Rows.Count == 1 && Convert.ToBoolean(dt.Rows[0]["IsValid"]))
                 {
-                    DeviceCode = Convert.ToString(dt.Rows[0]["Code"]);
                     return true;
                 }
                 else
@@ -112,7 +97,7 @@ namespace SalesBookAPI.Models
             }
             catch (Exception ex)
             {
-                strErr = ex.Message;
+                strErr = "Invalid Credentials";
                 return false;
             }
         }
