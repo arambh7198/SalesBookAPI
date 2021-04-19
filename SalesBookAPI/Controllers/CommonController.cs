@@ -32,6 +32,26 @@ namespace SalesBookAPI.Controllers
                 throw;
             }
         }
+
+        [ActionName("getCityInfo")]
+        [HttpPost]
+
+        public JArray getCityInfo([FromBody]JObject data)
+        {
+            try
+            {
+                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+                Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
+                IncludeParam.Add("UserCode", t.UserCode.ToString());
+                IncludeParam.Add("SessionID", t.SessionID.ToString());
+                return StaticGeneral.GetDataTable("pGetCityForAutoComplete", data, null, IncludeParam).ToJArray();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         #endregion
     }
 }
