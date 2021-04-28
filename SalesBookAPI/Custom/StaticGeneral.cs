@@ -156,6 +156,22 @@ namespace SalesBookAPI.Custom
             return dsRtn;
         }
 
+        public static DataSet GetDataSet(string strSQL, List<string> ExcludeParams = null, Dictionary<string, object> IncludeParams = null)
+        {
+            List<SqlParameter> sp = GetParameterList(null, ExcludeParams, IncludeParams);
+
+            SqlConnection sCon = new SqlConnection(GetDBConnectionString());
+            SqlCommand cmd = new SqlCommand(strSQL, sCon);
+
+
+            cmd.Parameters.AddRange(sp.ToArray());
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet dsRtn = new DataSet();
+            sda.Fill(dsRtn);
+            return dsRtn;
+        }
+
         public static int ExecuteNonQuery(string strSQL)
         {
             SqlConnection sCon = new SqlConnection(GetDBConnectionString());

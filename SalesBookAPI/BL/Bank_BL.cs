@@ -14,6 +14,7 @@ namespace SalesBookAPI.BL
         #region "CRUD Operation"
         public JObject GetData(JObject data, Token t)
         {
+
             JObject RtnObject = new JObject();
 
             Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
