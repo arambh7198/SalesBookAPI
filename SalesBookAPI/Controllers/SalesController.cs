@@ -15,6 +15,44 @@ namespace SalesBookAPI.Controllers
 {
     public class SalesController : ApiController
     {
+
+        [ActionName("getData")]
+        [HttpPost]
+        public JObject GetData([FromBody]JObject data)
+        {
+            try
+            {
+                JObject RtnObject = new JObject();
+                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+
+                if (data != null)
+                {
+                    Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
+
+                    List<string> ExcludeParam = new List<string>();
+                    ExcludeParam.Add("TotalCount");
+
+                    IncludeParam.Add("ResultType", "1");
+                    IncludeParam.Add("SessionID", t.SessionID);
+                    IncludeParam.Add("LoginCode", t.UserCode);
+                    DataTable dtDataCount = StaticGeneral.GetDataTable("Sales_Select", data, ExcludeParam, IncludeParam);
+
+                    IncludeParam["ResultType"] = "2";
+                    DataTable dtData = StaticGeneral.GetDataTable("Sales_Select", data, ExcludeParam, IncludeParam);
+
+                    RtnObject["Data"] = dtData.ToJArray();
+                    RtnObject["DataCount"] = dtDataCount.Rows[0]["totalRowsCount"].ToString();
+                    return RtnObject;
+                }
+
+                return RtnObject;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         #region "Sales Post"
 
         [ActionName("getSalesForEdit")]
@@ -97,6 +135,38 @@ namespace SalesBookAPI.Controllers
 
             ds.AcceptChanges();
         }
+
+
+
         #endregion
+
+
+        [ActionName("deleteData")]
+        [HttpDelete]
+        public JObject DeleteData(int Code = -1)
+        {
+            try
+            {
+                JObject RtnObject = new JObject();
+                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+
+                if (Code != -1)
+                {
+                    Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
+                    IncludeParam.Add("Code", Code);
+                    IncludeParam.Add("SessionID", t.SessionID);
+                    DataTable dtData = StaticGeneral.GetDataTable("Sales_Delete", IncludeParam);
+
+                    RtnObject["Data"] = dtData.ToJArray();
+
+                    return RtnObject;
+                }
+                return RtnObject;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
