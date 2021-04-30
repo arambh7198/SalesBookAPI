@@ -128,6 +128,14 @@ namespace SalesBookAPI.Custom
         {
             return Convert.ToString(ConfigurationManager.AppSettings["DateFormat"]);
         }
+        public static string AuthorisedSignFilePath()
+        {
+            return Convert.ToString(ConfigurationManager.AppSettings["AuthorisedSignFilePath"]);
+        }
+        public static string CompanyLogoFilePath()
+        {
+            return Convert.ToString(ConfigurationManager.AppSettings["CompanyLogoFilePath"]);
+        }
 
 
         #region Message Key

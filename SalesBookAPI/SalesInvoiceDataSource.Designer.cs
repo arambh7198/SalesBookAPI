@@ -353,6 +353,8 @@ namespace SalesBookAPI {
             
             private global::System.Data.DataColumn columnBankCountry;
             
+            private global::System.Data.DataColumn columnRptSrNo;
+            
             private global::System.Data.DataColumn columnItemCode;
             
             private global::System.Data.DataColumn columnProductName;
@@ -375,9 +377,19 @@ namespace SalesBookAPI {
             
             private global::System.Data.DataColumn columnDiscount;
             
+            private global::System.Data.DataColumn columnTaxPerc;
+            
             private global::System.Data.DataColumn columnTotQty;
             
             private global::System.Data.DataColumn columnTotAmount;
+            
+            private global::System.Data.DataColumn columnCompLogoFullURL;
+            
+            private global::System.Data.DataColumn columnOwnerSignURL;
+            
+            private global::System.Data.DataColumn columnUOM;
+            
+            private global::System.Data.DataColumn columnUOMSymbol;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -710,6 +722,14 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RptSrNoColumn {
+                get {
+                    return this.columnRptSrNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ItemCodeColumn {
                 get {
                     return this.columnItemCode;
@@ -798,6 +818,14 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TaxPercColumn {
+                get {
+                    return this.columnTaxPerc;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TotQtyColumn {
                 get {
                     return this.columnTotQty;
@@ -809,6 +837,38 @@ namespace SalesBookAPI {
             public global::System.Data.DataColumn TotAmountColumn {
                 get {
                     return this.columnTotAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CompLogoFullURLColumn {
+                get {
+                    return this.columnCompLogoFullURL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OwnerSignURLColumn {
+                get {
+                    return this.columnOwnerSignURL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UOMColumn {
+                get {
+                    return this.columnUOM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UOMSymbolColumn {
+                get {
+                    return this.columnUOMSymbol;
                 }
             }
             
@@ -887,6 +947,7 @@ namespace SalesBookAPI {
                         string BankCity, 
                         string BankState, 
                         string BankCountry, 
+                        long RptSrNo, 
                         int ItemCode, 
                         string ProductName, 
                         string HSNCode, 
@@ -898,8 +959,13 @@ namespace SalesBookAPI {
                         decimal SGST, 
                         decimal IGST, 
                         decimal Discount, 
+                        decimal TaxPerc, 
                         decimal TotQty, 
-                        decimal TotAmount) {
+                        decimal TotAmount, 
+                        string CompLogoFullURL, 
+                        string OwnerSignURL, 
+                        string UOM, 
+                        string UOMSymbol) {
                 pRpt_SalesRow rowpRpt_SalesRow = ((pRpt_SalesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Code,
@@ -939,6 +1005,7 @@ namespace SalesBookAPI {
                         BankCity,
                         BankState,
                         BankCountry,
+                        RptSrNo,
                         ItemCode,
                         ProductName,
                         HSNCode,
@@ -950,8 +1017,13 @@ namespace SalesBookAPI {
                         SGST,
                         IGST,
                         Discount,
+                        TaxPerc,
                         TotQty,
-                        TotAmount};
+                        TotAmount,
+                        CompLogoFullURL,
+                        OwnerSignURL,
+                        UOM,
+                        UOMSymbol};
                 rowpRpt_SalesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpRpt_SalesRow);
                 return rowpRpt_SalesRow;
@@ -1018,6 +1090,7 @@ namespace SalesBookAPI {
                 this.columnBankCity = base.Columns["BankCity"];
                 this.columnBankState = base.Columns["BankState"];
                 this.columnBankCountry = base.Columns["BankCountry"];
+                this.columnRptSrNo = base.Columns["RptSrNo"];
                 this.columnItemCode = base.Columns["ItemCode"];
                 this.columnProductName = base.Columns["ProductName"];
                 this.columnHSNCode = base.Columns["HSNCode"];
@@ -1029,8 +1102,13 @@ namespace SalesBookAPI {
                 this.columnSGST = base.Columns["SGST"];
                 this.columnIGST = base.Columns["IGST"];
                 this.columnDiscount = base.Columns["Discount"];
+                this.columnTaxPerc = base.Columns["TaxPerc"];
                 this.columnTotQty = base.Columns["TotQty"];
                 this.columnTotAmount = base.Columns["TotAmount"];
+                this.columnCompLogoFullURL = base.Columns["CompLogoFullURL"];
+                this.columnOwnerSignURL = base.Columns["OwnerSignURL"];
+                this.columnUOM = base.Columns["UOM"];
+                this.columnUOMSymbol = base.Columns["UOMSymbol"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1110,6 +1188,8 @@ namespace SalesBookAPI {
                 base.Columns.Add(this.columnBankState);
                 this.columnBankCountry = new global::System.Data.DataColumn("BankCountry", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBankCountry);
+                this.columnRptSrNo = new global::System.Data.DataColumn("RptSrNo", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRptSrNo);
                 this.columnItemCode = new global::System.Data.DataColumn("ItemCode", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnItemCode);
                 this.columnProductName = new global::System.Data.DataColumn("ProductName", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1132,10 +1212,20 @@ namespace SalesBookAPI {
                 base.Columns.Add(this.columnIGST);
                 this.columnDiscount = new global::System.Data.DataColumn("Discount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDiscount);
+                this.columnTaxPerc = new global::System.Data.DataColumn("TaxPerc", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTaxPerc);
                 this.columnTotQty = new global::System.Data.DataColumn("TotQty", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotQty);
                 this.columnTotAmount = new global::System.Data.DataColumn("TotAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotAmount);
+                this.columnCompLogoFullURL = new global::System.Data.DataColumn("CompLogoFullURL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCompLogoFullURL);
+                this.columnOwnerSignURL = new global::System.Data.DataColumn("OwnerSignURL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOwnerSignURL);
+                this.columnUOM = new global::System.Data.DataColumn("UOM", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUOM);
+                this.columnUOMSymbol = new global::System.Data.DataColumn("UOMSymbol", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUOMSymbol);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCode}, true));
                 this.columnCode.AllowDBNull = false;
@@ -1172,13 +1262,18 @@ namespace SalesBookAPI {
                 this.columnBankCity.MaxLength = 250;
                 this.columnBankState.MaxLength = 250;
                 this.columnBankCountry.MaxLength = 250;
-                this.columnProductName.AllowDBNull = false;
                 this.columnProductName.MaxLength = 200;
                 this.columnHSNCode.MaxLength = 200;
                 this.columnItemDescription.ReadOnly = true;
                 this.columnItemDescription.MaxLength = 1000;
                 this.columnTotQty.ReadOnly = true;
                 this.columnTotAmount.ReadOnly = true;
+                this.columnCompLogoFullURL.ReadOnly = true;
+                this.columnCompLogoFullURL.MaxLength = 2147483647;
+                this.columnOwnerSignURL.ReadOnly = true;
+                this.columnOwnerSignURL.MaxLength = 2147483647;
+                this.columnUOM.MaxLength = 200;
+                this.columnUOMSymbol.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1908,6 +2003,22 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long RptSrNo {
+                get {
+                    try {
+                        return ((long)(this[this.tablepRpt_Sales.RptSrNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RptSrNo\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.RptSrNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int ItemCode {
                 get {
                     try {
@@ -1926,7 +2037,12 @@ namespace SalesBookAPI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string ProductName {
                 get {
-                    return ((string)(this[this.tablepRpt_Sales.ProductNameColumn]));
+                    try {
+                        return ((string)(this[this.tablepRpt_Sales.ProductNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ProductName\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablepRpt_Sales.ProductNameColumn] = value;
@@ -2079,6 +2195,22 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TaxPerc {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.TaxPercColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TaxPerc\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.TaxPercColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public decimal TotQty {
                 get {
                     try {
@@ -2106,6 +2238,70 @@ namespace SalesBookAPI {
                 }
                 set {
                     this[this.tablepRpt_Sales.TotAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CompLogoFullURL {
+                get {
+                    try {
+                        return ((string)(this[this.tablepRpt_Sales.CompLogoFullURLColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CompLogoFullURL\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.CompLogoFullURLColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string OwnerSignURL {
+                get {
+                    try {
+                        return ((string)(this[this.tablepRpt_Sales.OwnerSignURLColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OwnerSignURL\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.OwnerSignURLColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UOM {
+                get {
+                    try {
+                        return ((string)(this[this.tablepRpt_Sales.UOMColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UOM\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.UOMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UOMSymbol {
+                get {
+                    try {
+                        return ((string)(this[this.tablepRpt_Sales.UOMSymbolColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UOMSymbol\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.UOMSymbolColumn] = value;
                 }
             }
             
@@ -2543,6 +2739,18 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRptSrNoNull() {
+                return this.IsNull(this.tablepRpt_Sales.RptSrNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRptSrNoNull() {
+                this[this.tablepRpt_Sales.RptSrNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsItemCodeNull() {
                 return this.IsNull(this.tablepRpt_Sales.ItemCodeColumn);
             }
@@ -2551,6 +2759,18 @@ namespace SalesBookAPI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetItemCodeNull() {
                 this[this.tablepRpt_Sales.ItemCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProductNameNull() {
+                return this.IsNull(this.tablepRpt_Sales.ProductNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProductNameNull() {
+                this[this.tablepRpt_Sales.ProductNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2663,6 +2883,18 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTaxPercNull() {
+                return this.IsNull(this.tablepRpt_Sales.TaxPercColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTaxPercNull() {
+                this[this.tablepRpt_Sales.TaxPercColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTotQtyNull() {
                 return this.IsNull(this.tablepRpt_Sales.TotQtyColumn);
             }
@@ -2683,6 +2915,54 @@ namespace SalesBookAPI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetTotAmountNull() {
                 this[this.tablepRpt_Sales.TotAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCompLogoFullURLNull() {
+                return this.IsNull(this.tablepRpt_Sales.CompLogoFullURLColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCompLogoFullURLNull() {
+                this[this.tablepRpt_Sales.CompLogoFullURLColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsOwnerSignURLNull() {
+                return this.IsNull(this.tablepRpt_Sales.OwnerSignURLColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetOwnerSignURLNull() {
+                this[this.tablepRpt_Sales.OwnerSignURLColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUOMNull() {
+                return this.IsNull(this.tablepRpt_Sales.UOMColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUOMNull() {
+                this[this.tablepRpt_Sales.UOMColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUOMSymbolNull() {
+                return this.IsNull(this.tablepRpt_Sales.UOMSymbolColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUOMSymbolNull() {
+                this[this.tablepRpt_Sales.UOMSymbolColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2882,6 +3162,7 @@ namespace SalesBookAPI.SalesInvoiceDataSourceTableAdapters {
             tableMapping.ColumnMappings.Add("BankCity", "BankCity");
             tableMapping.ColumnMappings.Add("BankState", "BankState");
             tableMapping.ColumnMappings.Add("BankCountry", "BankCountry");
+            tableMapping.ColumnMappings.Add("RptSrNo", "RptSrNo");
             tableMapping.ColumnMappings.Add("ItemCode", "ItemCode");
             tableMapping.ColumnMappings.Add("ProductName", "ProductName");
             tableMapping.ColumnMappings.Add("HSNCode", "HSNCode");
@@ -2893,8 +3174,13 @@ namespace SalesBookAPI.SalesInvoiceDataSourceTableAdapters {
             tableMapping.ColumnMappings.Add("SGST", "SGST");
             tableMapping.ColumnMappings.Add("IGST", "IGST");
             tableMapping.ColumnMappings.Add("Discount", "Discount");
+            tableMapping.ColumnMappings.Add("TaxPerc", "TaxPerc");
             tableMapping.ColumnMappings.Add("TotQty", "TotQty");
             tableMapping.ColumnMappings.Add("TotAmount", "TotAmount");
+            tableMapping.ColumnMappings.Add("CompLogoFullURL", "CompLogoFullURL");
+            tableMapping.ColumnMappings.Add("OwnerSignURL", "OwnerSignURL");
+            tableMapping.ColumnMappings.Add("UOM", "UOM");
+            tableMapping.ColumnMappings.Add("UOMSymbol", "UOMSymbol");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -2915,19 +3201,33 @@ namespace SalesBookAPI.SalesInvoiceDataSourceTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Code", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CompanyLogoFilePath", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AuthorisedSignFilePath", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(SalesInvoiceDataSource.pRpt_SalesDataTable dataTable, global::System.Nullable<int> Code) {
+        public virtual int Fill(SalesInvoiceDataSource.pRpt_SalesDataTable dataTable, global::System.Nullable<int> Code, string CompanyLogoFilePath, string AuthorisedSignFilePath) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Code.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Code.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((CompanyLogoFilePath == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(CompanyLogoFilePath));
+            }
+            if ((AuthorisedSignFilePath == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(AuthorisedSignFilePath));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2940,13 +3240,25 @@ namespace SalesBookAPI.SalesInvoiceDataSourceTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual SalesInvoiceDataSource.pRpt_SalesDataTable GetData(global::System.Nullable<int> Code) {
+        public virtual SalesInvoiceDataSource.pRpt_SalesDataTable GetData(global::System.Nullable<int> Code, string CompanyLogoFilePath, string AuthorisedSignFilePath) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Code.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Code.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((CompanyLogoFilePath == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(CompanyLogoFilePath));
+            }
+            if ((AuthorisedSignFilePath == null)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(AuthorisedSignFilePath));
             }
             SalesInvoiceDataSource.pRpt_SalesDataTable dataTable = new SalesInvoiceDataSource.pRpt_SalesDataTable();
             this.Adapter.Fill(dataTable);

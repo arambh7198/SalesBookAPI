@@ -43,6 +43,8 @@ namespace SalesBookAPI.BL
 
                 Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
                 IncludeParam.Add("Code", data["Code"].ToString());
+                IncludeParam.Add("CompanyLogoFilePath", SiteConfig.CompanyLogoFilePath().ToString());
+                IncludeParam.Add("AuthorisedSignFilePath", SiteConfig.AuthorisedSignFilePath().ToString());
 
                 DataTable dtData = StaticGeneral.GetDataTable("pRpt_Sales", IncludeParam, true, 120);
 
@@ -57,7 +59,9 @@ namespace SalesBookAPI.BL
 
                 byte[] array;
 
-                Microsoft.Reporting.WebForms.ReportParameter Rp1 = new Microsoft.Reporting.WebForms.ReportParameter("Code", data["Code"].ToString());
+                ReportParameter Rp1 = new ReportParameter("Code", data["Code"].ToString());
+                ReportParameter Rp2 = new ReportParameter("CompanyLogoFilePath", SiteConfig.CompanyLogoFilePath().ToString());
+                ReportParameter Rp3 = new ReportParameter("AuthorisedSignFilePath", SiteConfig.AuthorisedSignFilePath().ToString());
 
                 using (ReportViewer rptvw = new ReportViewer())
                 {
@@ -68,6 +72,8 @@ namespace SalesBookAPI.BL
                     rptvw.LocalReport.DataSources.Clear();
 
                     rptvw.LocalReport.SetParameters(Rp1);
+                    rptvw.LocalReport.SetParameters(Rp2);
+                    rptvw.LocalReport.SetParameters(Rp3);
 
                     ReportDataSource rds = new ReportDataSource("DataSet1", dtData);
                     rptvw.LocalReport.DataSources.Add(rds);
@@ -140,6 +146,8 @@ namespace SalesBookAPI.BL
 
                 Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
                 IncludeParam.Add("Code", data["Code"].ToString());
+                IncludeParam.Add("CompanyLogoFilePath", SiteConfig.CompanyLogoFilePath().ToString());
+                IncludeParam.Add("AuthorisedSignFilePath", SiteConfig.AuthorisedSignFilePath().ToString());
 
                 DataTable dtData = StaticGeneral.GetDataTable("pRpt_Sales", IncludeParam, true, 120);
 
@@ -155,6 +163,8 @@ namespace SalesBookAPI.BL
                 byte[] array;
 
                 ReportParameter Rp1 = new ReportParameter("Code", data["Code"].ToString());
+                ReportParameter Rp2 = new ReportParameter("CompanyLogoFilePath", SiteConfig.CompanyLogoFilePath().ToString());
+                ReportParameter Rp3 = new ReportParameter("AuthorisedSignFilePath", SiteConfig.AuthorisedSignFilePath().ToString());
 
                 using (ReportViewer rptvw = new ReportViewer())
                 {
@@ -163,6 +173,8 @@ namespace SalesBookAPI.BL
                     rptvw.LocalReport.DataSources.Clear();
 
                     rptvw.LocalReport.SetParameters(Rp1);
+                    rptvw.LocalReport.SetParameters(Rp2);
+                    rptvw.LocalReport.SetParameters(Rp3);
 
                     ReportDataSource rds = new ReportDataSource("DataSet1", dtData);
                     rptvw.LocalReport.DataSources.Add(rds);

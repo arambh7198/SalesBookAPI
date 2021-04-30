@@ -6,28 +6,28 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.38542in</Width>
+              <Width>0.28125in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.08333in</Width>
+              <Width>2.90625in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.91667in</Width>
+              <Width>0.8125in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.57292in</Width>
+              <Width>0.45834in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.63542in</Width>
+              <Width>0.60417in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.91667in</Width>
+              <Width>0.78125in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.53125in</Width>
+              <Width>0.47917in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.32292in</Width>
+              <Width>1.125in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -137,13 +137,13 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>0.82986in</Width>
+                            <Width>0.52431in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>4.74653in</Width>
+                            <Width>4.44098in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>2.78819in</Width>
+                            <Width>2.48264in</Width>
                           </TablixColumn>
                         </TablixColumns>
                         <TablixRows>
@@ -154,7 +154,7 @@
                                 <CellContents>
                                   <Image Name="Image1">
                                     <Source>External</Source>
-                                    <Value>="http://www.mindtechsolutions.com/tester/NivasV1/Images/main-logo.png"</Value>
+                                    <Value>=Parameters!CompanyLogoFilePath.Value + Fields!CompanyLogo.Value</Value>
                                     <Sizing>FitProportional</Sizing>
                                     <Style>
                                       <Border>
@@ -390,13 +390,13 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>1.46181in</Width>
+                            <Width>1.33333in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>1.46181in</Width>
+                            <Width>1.33333in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>1.46181in</Width>
+                            <Width>1.33333in</Width>
                           </TablixColumn>
                         </TablixColumns>
                         <TablixRows>
@@ -777,10 +777,10 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>2.375in</Width>
+                            <Width>2.10938in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>1.60417in</Width>
+                            <Width>1.33855in</Width>
                           </TablixColumn>
                         </TablixColumns>
                         <TablixRows>
@@ -1593,29 +1593,35 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.25in</Height>
+              <Height>0.39583in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox2">
+                    <Textbox Name="RptSrNo">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
-                              <Style />
+                              <Value>=Fields!RptSrNo.Value</Value>
+                              <Style>
+                                <FontFamily>TAhoma</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <rd:DefaultName>RptSrNo</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1630,6 +1636,18 @@
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!ProductName.Value</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
@@ -1648,6 +1666,9 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1680,6 +1701,9 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1714,6 +1738,9 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1724,14 +1751,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox46">
+                    <Textbox Name="UOMSymbol">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!UOMSymbol.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -1743,11 +1770,14 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox46</rd:DefaultName>
+                      <rd:DefaultName>UOMSymbol</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1784,6 +1814,9 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1794,14 +1827,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox62">
+                    <Textbox Name="TaxPerc">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>18 %</Value>
+                              <Value>=Fields!TaxPerc.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -1813,11 +1846,14 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox62</rd:DefaultName>
+                      <rd:DefaultName>TaxPerc</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1854,6 +1890,9 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -1873,22 +1912,22 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>0.66146in</Width>
+                            <Width>0.59722in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>1.02604in</Width>
+                            <Width>0.9618in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>0.43229in</Width>
+                            <Width>0.36805in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>0.93438in</Width>
+                            <Width>0.87014in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>0.41458in</Width>
+                            <Width>0.39027in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>0.91667in</Width>
+                            <Width>0.8125in</Width>
                           </TablixColumn>
                         </TablixColumns>
                         <TablixRows>
@@ -2605,10 +2644,10 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>1.44792in</Width>
+                            <Width>1.25521in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>1.32292in</Width>
+                            <Width>1.13021in</Width>
                           </TablixColumn>
                         </TablixColumns>
                         <TablixRows>
@@ -2983,10 +3022,10 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>1.07812in</Width>
+                            <Width>0.88542in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>3.30729in</Width>
+                            <Width>3.11459in</Width>
                           </TablixColumn>
                         </TablixColumns>
                         <TablixRows>
@@ -3413,13 +3452,13 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>1.32639in</Width>
+                            <Width>1.14931in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>1.32639in</Width>
+                            <Width>1.14931in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>1.32639in</Width>
+                            <Width>1.14931in</Width>
                           </TablixColumn>
                         </TablixColumns>
                         <TablixRows>
@@ -3483,7 +3522,7 @@
                                 <CellContents>
                                   <Image Name="Image2">
                                     <Source>External</Source>
-                                    <Value>="http://www.mindtechsolutions.com/tester/NivasV1/Images/main-logo.png"</Value>
+                                    <Value>=Parameters!AuthorisedSignFilePath.Value + Fields!AuthoriseSignature.Value</Value>
                                     <Sizing>FitProportional</Sizing>
                                     <Style>
                                       <Border>
@@ -3639,8 +3678,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Height>5.55583in</Height>
-        <Width>8.3646in</Width>
+        <Height>5.70166in</Height>
+        <Width>7.44793in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3648,10 +3687,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>5.55584in</Height>
+    <Height>5.70166in</Height>
     <Style />
   </Body>
-  <Width>8.3646in</Width>
+  <Width>7.44793in</Width>
   <Page>
     <PageHeight>11.69in</PageHeight>
     <PageWidth>8.27in</PageWidth>
@@ -3668,21 +3707,14 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>5a408885-479e-4d37-b508-9518f9101f9e</rd:DataSourceID>
+      <rd:DataSourceID>6cd1f988-5b12-450e-809d-72386de1265e</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>SalesInvoiceDataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@Code">
-            <Value>=Parameters!Code.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>pRpt_Sales</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
         <Field Name="Code">
@@ -3833,6 +3865,10 @@
           <DataField>BankCountry</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="RptSrNo">
+          <DataField>RptSrNo</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
         <Field Name="ItemCode">
           <DataField>ItemCode</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -3877,6 +3913,10 @@
           <DataField>Discount</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="TaxPerc">
+          <DataField>TaxPerc</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="TotQty">
           <DataField>TotQty</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -3884,6 +3924,22 @@
         <Field Name="TotAmount">
           <DataField>TotAmount</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CompLogoFullURL">
+          <DataField>CompLogoFullURL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OwnerSignURL">
+          <DataField>OwnerSignURL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UOM">
+          <DataField>UOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UOMSymbol">
+          <DataField>UOMSymbol</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
@@ -3899,7 +3955,15 @@
   <ReportParameters>
     <ReportParameter Name="Code">
       <DataType>Integer</DataType>
-      <Prompt>Code</Prompt>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CompanyLogoFilePath">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AuthorisedSignFilePath">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
   <Language>en-US</Language>
