@@ -80,6 +80,14 @@
               <Mapping SourceColumn="OwnerSignURL" DataSetColumn="OwnerSignURL" />
               <Mapping SourceColumn="UOM" DataSetColumn="UOM" />
               <Mapping SourceColumn="UOMSymbol" DataSetColumn="UOMSymbol" />
+              <Mapping SourceColumn="SubTotal" DataSetColumn="SubTotal" />
+              <Mapping SourceColumn="TotCGST" DataSetColumn="TotCGST" />
+              <Mapping SourceColumn="TotSGST" DataSetColumn="TotSGST" />
+              <Mapping SourceColumn="TotIGST" DataSetColumn="TotIGST" />
+              <Mapping SourceColumn="Transportation" DataSetColumn="Transportation" />
+              <Mapping SourceColumn="TotDiscount" DataSetColumn="TotDiscount" />
+              <Mapping SourceColumn="TotalAmount" DataSetColumn="TotalAmount" />
+              <Mapping SourceColumn="InvoiceAmtInWords" DataSetColumn="InvoiceAmtInWords" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -91,7 +99,7 @@
   <xs:element name="SalesInvoiceDataSource" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SalesInvoiceDataSource" msprop:Generator_UserDSName="SalesInvoiceDataSource">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="pRpt_Sales" msprop:Generator_TableClassName="pRpt_SalesDataTable" msprop:Generator_TableVarName="tablepRpt_Sales" msprop:Generator_TablePropName="pRpt_Sales" msprop:Generator_RowDeletingName="pRpt_SalesRowDeleting" msprop:Generator_RowChangingName="pRpt_SalesRowChanging" msprop:Generator_RowEvHandlerName="pRpt_SalesRowChangeEventHandler" msprop:Generator_RowDeletedName="pRpt_SalesRowDeleted" msprop:Generator_UserTableName="pRpt_Sales" msprop:Generator_RowChangedName="pRpt_SalesRowChanged" msprop:Generator_RowEvArgName="pRpt_SalesRowChangeEvent" msprop:Generator_RowClassName="pRpt_SalesRow">
+        <xs:element name="pRpt_Sales" msprop:Generator_TableClassName="pRpt_SalesDataTable" msprop:Generator_TableVarName="tablepRpt_Sales" msprop:Generator_RowChangedName="pRpt_SalesRowChanged" msprop:Generator_TablePropName="pRpt_Sales" msprop:Generator_RowDeletingName="pRpt_SalesRowDeleting" msprop:Generator_RowChangingName="pRpt_SalesRowChanging" msprop:Generator_RowEvHandlerName="pRpt_SalesRowChangeEventHandler" msprop:Generator_RowDeletedName="pRpt_SalesRowDeleted" msprop:Generator_RowClassName="pRpt_SalesRow" msprop:Generator_UserTableName="pRpt_Sales" msprop:Generator_RowEvArgName="pRpt_SalesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:int" />
@@ -381,6 +389,20 @@
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" msprop:Generator_UserColumnName="SubTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotCGST" msprop:Generator_ColumnVarNameInTable="columnTotCGST" msprop:Generator_ColumnPropNameInRow="TotCGST" msprop:Generator_ColumnPropNameInTable="TotCGSTColumn" msprop:Generator_UserColumnName="TotCGST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotSGST" msprop:Generator_ColumnVarNameInTable="columnTotSGST" msprop:Generator_ColumnPropNameInRow="TotSGST" msprop:Generator_ColumnPropNameInTable="TotSGSTColumn" msprop:Generator_UserColumnName="TotSGST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotIGST" msprop:Generator_ColumnVarNameInTable="columnTotIGST" msprop:Generator_ColumnPropNameInRow="TotIGST" msprop:Generator_ColumnPropNameInTable="TotIGSTColumn" msprop:Generator_UserColumnName="TotIGST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Transportation" msprop:Generator_ColumnVarNameInTable="columnTransportation" msprop:Generator_ColumnPropNameInRow="Transportation" msprop:Generator_ColumnPropNameInTable="TransportationColumn" msprop:Generator_UserColumnName="Transportation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotDiscount" msprop:Generator_ColumnVarNameInTable="columnTotDiscount" msprop:Generator_ColumnPropNameInRow="TotDiscount" msprop:Generator_ColumnPropNameInTable="TotDiscountColumn" msprop:Generator_UserColumnName="TotDiscount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InvoiceAmtInWords" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnInvoiceAmtInWords" msprop:Generator_ColumnPropNameInRow="InvoiceAmtInWords" msprop:Generator_ColumnPropNameInTable="InvoiceAmtInWordsColumn" msprop:Generator_UserColumnName="InvoiceAmtInWords" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>

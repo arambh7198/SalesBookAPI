@@ -391,6 +391,22 @@ namespace SalesBookAPI {
             
             private global::System.Data.DataColumn columnUOMSymbol;
             
+            private global::System.Data.DataColumn columnSubTotal;
+            
+            private global::System.Data.DataColumn columnTotCGST;
+            
+            private global::System.Data.DataColumn columnTotSGST;
+            
+            private global::System.Data.DataColumn columnTotIGST;
+            
+            private global::System.Data.DataColumn columnTransportation;
+            
+            private global::System.Data.DataColumn columnTotDiscount;
+            
+            private global::System.Data.DataColumn columnTotalAmount;
+            
+            private global::System.Data.DataColumn columnInvoiceAmtInWords;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public pRpt_SalesDataTable() {
@@ -874,6 +890,70 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SubTotalColumn {
+                get {
+                    return this.columnSubTotal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotCGSTColumn {
+                get {
+                    return this.columnTotCGST;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotSGSTColumn {
+                get {
+                    return this.columnTotSGST;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotIGSTColumn {
+                get {
+                    return this.columnTotIGST;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TransportationColumn {
+                get {
+                    return this.columnTransportation;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotDiscountColumn {
+                get {
+                    return this.columnTotDiscount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotalAmountColumn {
+                get {
+                    return this.columnTotalAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn InvoiceAmtInWordsColumn {
+                get {
+                    return this.columnInvoiceAmtInWords;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -965,7 +1045,15 @@ namespace SalesBookAPI {
                         string CompLogoFullURL, 
                         string OwnerSignURL, 
                         string UOM, 
-                        string UOMSymbol) {
+                        string UOMSymbol, 
+                        decimal SubTotal, 
+                        decimal TotCGST, 
+                        decimal TotSGST, 
+                        decimal TotIGST, 
+                        decimal Transportation, 
+                        decimal TotDiscount, 
+                        decimal TotalAmount, 
+                        string InvoiceAmtInWords) {
                 pRpt_SalesRow rowpRpt_SalesRow = ((pRpt_SalesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Code,
@@ -1023,7 +1111,15 @@ namespace SalesBookAPI {
                         CompLogoFullURL,
                         OwnerSignURL,
                         UOM,
-                        UOMSymbol};
+                        UOMSymbol,
+                        SubTotal,
+                        TotCGST,
+                        TotSGST,
+                        TotIGST,
+                        Transportation,
+                        TotDiscount,
+                        TotalAmount,
+                        InvoiceAmtInWords};
                 rowpRpt_SalesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpRpt_SalesRow);
                 return rowpRpt_SalesRow;
@@ -1109,6 +1205,14 @@ namespace SalesBookAPI {
                 this.columnOwnerSignURL = base.Columns["OwnerSignURL"];
                 this.columnUOM = base.Columns["UOM"];
                 this.columnUOMSymbol = base.Columns["UOMSymbol"];
+                this.columnSubTotal = base.Columns["SubTotal"];
+                this.columnTotCGST = base.Columns["TotCGST"];
+                this.columnTotSGST = base.Columns["TotSGST"];
+                this.columnTotIGST = base.Columns["TotIGST"];
+                this.columnTransportation = base.Columns["Transportation"];
+                this.columnTotDiscount = base.Columns["TotDiscount"];
+                this.columnTotalAmount = base.Columns["TotalAmount"];
+                this.columnInvoiceAmtInWords = base.Columns["InvoiceAmtInWords"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1226,6 +1330,22 @@ namespace SalesBookAPI {
                 base.Columns.Add(this.columnUOM);
                 this.columnUOMSymbol = new global::System.Data.DataColumn("UOMSymbol", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUOMSymbol);
+                this.columnSubTotal = new global::System.Data.DataColumn("SubTotal", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSubTotal);
+                this.columnTotCGST = new global::System.Data.DataColumn("TotCGST", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotCGST);
+                this.columnTotSGST = new global::System.Data.DataColumn("TotSGST", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotSGST);
+                this.columnTotIGST = new global::System.Data.DataColumn("TotIGST", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotIGST);
+                this.columnTransportation = new global::System.Data.DataColumn("Transportation", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransportation);
+                this.columnTotDiscount = new global::System.Data.DataColumn("TotDiscount", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotDiscount);
+                this.columnTotalAmount = new global::System.Data.DataColumn("TotalAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalAmount);
+                this.columnInvoiceAmtInWords = new global::System.Data.DataColumn("InvoiceAmtInWords", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInvoiceAmtInWords);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCode}, true));
                 this.columnCode.AllowDBNull = false;
@@ -1274,6 +1394,8 @@ namespace SalesBookAPI {
                 this.columnOwnerSignURL.MaxLength = 2147483647;
                 this.columnUOM.MaxLength = 200;
                 this.columnUOMSymbol.MaxLength = 10;
+                this.columnInvoiceAmtInWords.ReadOnly = true;
+                this.columnInvoiceAmtInWords.MaxLength = 2000;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2307,6 +2429,134 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal SubTotal {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.SubTotalColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SubTotal\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.SubTotalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TotCGST {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.TotCGSTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotCGST\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.TotCGSTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TotSGST {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.TotSGSTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotSGST\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.TotSGSTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TotIGST {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.TotIGSTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotIGST\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.TotIGSTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Transportation {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.TransportationColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Transportation\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.TransportationColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TotDiscount {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.TotDiscountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotDiscount\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.TotDiscountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TotalAmount {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablepRpt_Sales.TotalAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalAmount\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.TotalAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string InvoiceAmtInWords {
+                get {
+                    try {
+                        return ((string)(this[this.tablepRpt_Sales.InvoiceAmtInWordsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'InvoiceAmtInWords\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.InvoiceAmtInWordsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsInvoiceNoNull() {
                 return this.IsNull(this.tablepRpt_Sales.InvoiceNoColumn);
             }
@@ -2964,6 +3214,102 @@ namespace SalesBookAPI {
             public void SetUOMSymbolNull() {
                 this[this.tablepRpt_Sales.UOMSymbolColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSubTotalNull() {
+                return this.IsNull(this.tablepRpt_Sales.SubTotalColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSubTotalNull() {
+                this[this.tablepRpt_Sales.SubTotalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotCGSTNull() {
+                return this.IsNull(this.tablepRpt_Sales.TotCGSTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotCGSTNull() {
+                this[this.tablepRpt_Sales.TotCGSTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotSGSTNull() {
+                return this.IsNull(this.tablepRpt_Sales.TotSGSTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotSGSTNull() {
+                this[this.tablepRpt_Sales.TotSGSTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotIGSTNull() {
+                return this.IsNull(this.tablepRpt_Sales.TotIGSTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotIGSTNull() {
+                this[this.tablepRpt_Sales.TotIGSTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTransportationNull() {
+                return this.IsNull(this.tablepRpt_Sales.TransportationColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTransportationNull() {
+                this[this.tablepRpt_Sales.TransportationColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotDiscountNull() {
+                return this.IsNull(this.tablepRpt_Sales.TotDiscountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotDiscountNull() {
+                this[this.tablepRpt_Sales.TotDiscountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotalAmountNull() {
+                return this.IsNull(this.tablepRpt_Sales.TotalAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotalAmountNull() {
+                this[this.tablepRpt_Sales.TotalAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsInvoiceAmtInWordsNull() {
+                return this.IsNull(this.tablepRpt_Sales.InvoiceAmtInWordsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetInvoiceAmtInWordsNull() {
+                this[this.tablepRpt_Sales.InvoiceAmtInWordsColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -3181,6 +3527,14 @@ namespace SalesBookAPI.SalesInvoiceDataSourceTableAdapters {
             tableMapping.ColumnMappings.Add("OwnerSignURL", "OwnerSignURL");
             tableMapping.ColumnMappings.Add("UOM", "UOM");
             tableMapping.ColumnMappings.Add("UOMSymbol", "UOMSymbol");
+            tableMapping.ColumnMappings.Add("SubTotal", "SubTotal");
+            tableMapping.ColumnMappings.Add("TotCGST", "TotCGST");
+            tableMapping.ColumnMappings.Add("TotSGST", "TotSGST");
+            tableMapping.ColumnMappings.Add("TotIGST", "TotIGST");
+            tableMapping.ColumnMappings.Add("Transportation", "Transportation");
+            tableMapping.ColumnMappings.Add("TotDiscount", "TotDiscount");
+            tableMapping.ColumnMappings.Add("TotalAmount", "TotalAmount");
+            tableMapping.ColumnMappings.Add("InvoiceAmtInWords", "InvoiceAmtInWords");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
