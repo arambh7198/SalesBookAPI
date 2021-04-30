@@ -52,6 +52,45 @@ namespace SalesBookAPI.Controllers
             }
         }
 
+        [ActionName("getItemInfo")]
+        [HttpPost]
+
+        public JArray getItemInfo([FromBody]JObject data)
+        {
+            try
+            {
+                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+                Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
+                IncludeParam.Add("UserCode", t.UserCode.ToString());
+                IncludeParam.Add("SessionID", t.SessionID.ToString());
+                return StaticGeneral.GetDataTable("pGetItemForAutoComplete", data, null, IncludeParam).ToJArray();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+        [ActionName("getBankInfo")]
+        [HttpPost]
+
+        public JArray getBankInfo([FromBody]JObject data)
+        {
+            try
+            {
+                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+                Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
+                IncludeParam.Add("UserCode", t.UserCode.ToString());
+                IncludeParam.Add("SessionID", t.SessionID.ToString());
+                return StaticGeneral.GetDataTable("pGetBankForAutoComplete", data, null, IncludeParam).ToJArray();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         #endregion
     }
 }

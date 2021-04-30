@@ -9,12 +9,11 @@ using System.Web;
 
 namespace SalesBookAPI.BL
 {
-    public class Bank_BL
+    public class Company_BL
     {
         #region "CRUD Operation"
         public JObject GetData(JObject data, Token t)
         {
-
             JObject RtnObject = new JObject();
 
             Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
@@ -25,10 +24,10 @@ namespace SalesBookAPI.BL
             IncludeParam.Add("ResultType", "1");
             IncludeParam.Add("SessionID", t.SessionID);
             IncludeParam.Add("LoginCode", t.UserCode);
-            DataTable dtDataCount = StaticGeneral.GetDataTable("BankDetails_Select", data, ExcludeParam, IncludeParam);
+            DataTable dtDataCount = StaticGeneral.GetDataTable("Company_Select", data, ExcludeParam, IncludeParam);
 
             IncludeParam["ResultType"] = "2";
-            DataTable dtData = StaticGeneral.GetDataTable("BankDetails_Select", data, ExcludeParam, IncludeParam);
+            DataTable dtData = StaticGeneral.GetDataTable("Company_Select", data, ExcludeParam, IncludeParam);
 
             RtnObject["Data"] = dtData.ToJArray();
             RtnObject["DataCount"] = dtDataCount.Rows[0]["totalRowsCount"].ToString();
@@ -47,7 +46,7 @@ namespace SalesBookAPI.BL
             List<string> ExcludeParam = new List<string>();
             ExcludeParam.Add("Locked");
 
-            DataTable dtData = StaticGeneral.GetDataTable("BankDetails_Insert", data, ExcludeParam, IncludeParam);
+            DataTable dtData = StaticGeneral.GetDataTable("Company_Insert", data, ExcludeParam, IncludeParam);
 
             RtnObject["Data"] = dtData.ToJArray();
 
@@ -64,7 +63,7 @@ namespace SalesBookAPI.BL
             IncludeParam.Add("SessionID", t.SessionID);
             List<string> ExcludeParam = new List<string>();
 
-            DataTable dtData = StaticGeneral.GetDataTable("BankDetails_Update", data, ExcludeParam, IncludeParam);
+            DataTable dtData = StaticGeneral.GetDataTable("Company_Update", data, ExcludeParam, IncludeParam);
 
             RtnObject["Data"] = dtData.ToJArray();
 
@@ -80,7 +79,7 @@ namespace SalesBookAPI.BL
             Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
             IncludeParam.Add("Code", Code);
             IncludeParam.Add("SessionID", t.SessionID);
-            DataTable dtData = StaticGeneral.GetDataTable("BankDetails_Delete", IncludeParam);
+            DataTable dtData = StaticGeneral.GetDataTable("Company_Delete", IncludeParam);
 
             RtnObject["Data"] = dtData.ToJArray();
 
