@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using SalesBookAPI.BL;
 using SalesBookAPI.Custom;
 using SalesBookAPI.Models;
 using System;
@@ -15,7 +16,7 @@ namespace SalesBookAPI.Controllers
 {
     public class SalesController : ApiController
     {
-
+        Sales_BL bl = new Sales_BL();
         [ActionName("getData")]
         [HttpPost]
         public JObject GetData([FromBody]JObject data)
@@ -78,7 +79,8 @@ namespace SalesBookAPI.Controllers
                     Tables.Add("Sales");
                     return ds.toJObjectWithRelations(Tables);
                 }
-                else {
+                else
+                {
                     RtnObject["Data"] = ds.Tables[0].ToJArray();
                     return RtnObject;
                 }
@@ -168,5 +170,41 @@ namespace SalesBookAPI.Controllers
                 throw;
             }
         }
+
+
+        #region "Sales Invoice Report"
+        [ActionName("GetInvoiceReport")]
+        [HttpPost]
+        public JObject GetInvoiceReport([FromBody]JObject data)
+        {
+            try
+            {
+                JObject RtnObject = new JObject();
+                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+                string FilePath = "";
+                if (data != null)
+                {
+                    if (data["Format"].ToString() == "PDF")
+                    {
+                        FilePath = bl.getUserReportPDF(data, t);
+                    }
+                    else
+                    {
+                        FilePath = bl.getUserReportExcel(data, t);
+                    }
+                }
+
+                if (FilePath != null && FilePath.ToString() != "")
+                {
+                    RtnObject["FilePath"] = FilePath;
+                }
+                return RtnObject;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        #endregion
     }
 }

@@ -124,6 +124,10 @@ namespace SalesBookAPI.Custom
                 return ConfigurationManager.AppSettings["endPointAddress"].ToString();
             }
         }
+        public static string DateFormat()
+        {
+            return Convert.ToString(ConfigurationManager.AppSettings["DateFormat"]);
+        }
 
 
         #region Message Key

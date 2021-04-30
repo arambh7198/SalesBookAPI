@@ -3662,10 +3662,19 @@
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="SalesInvoiceDataSource">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>5a408885-479e-4d37-b508-9518f9101f9e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>AdminDataSource</DataSourceName>
+        <DataSourceName>SalesInvoiceDataSource</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@Code">
             <Value>=Parameters!Code.Value</Value>
@@ -3740,13 +3749,13 @@
           <DataField>AuthoriseSignature</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CustomerCode">
-          <DataField>CustomerCode</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="CompEmailID">
           <DataField>CompEmailID</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerCode">
+          <DataField>CustomerCode</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="CustomerName">
           <DataField>CustomerName</DataField>
@@ -3856,12 +3865,12 @@
           <DataField>CGST</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="IGST">
-          <DataField>IGST</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
         <Field Name="SGST">
           <DataField>SGST</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IGST">
+          <DataField>IGST</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Discount">
@@ -3877,6 +3886,14 @@
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>SalesInvoiceDataSource</rd:DataSetName>
+        <rd:SchemaPath>D:\D Drive\MyWork\SalesBookAPI\SalesBookAPI\SalesInvoiceDataSource.xsd</rd:SchemaPath>
+        <rd:TableName>pRpt_Sales</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>pRpt_SalesTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <ReportParameters>
