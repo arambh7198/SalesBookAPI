@@ -173,6 +173,7 @@ namespace SalesBookAPI.Controllers
 
 
         #region "Sales Invoice Report"
+        [AllowAnonymous]
         [ActionName("GetInvoiceReport")]
         [HttpPost]
         public JObject GetInvoiceReport([FromBody]JObject data)
@@ -180,17 +181,17 @@ namespace SalesBookAPI.Controllers
             try
             {
                 JObject RtnObject = new JObject();
-                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+                //Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
                 string FilePath = "";
                 if (data != null)
                 {
                     if (data["Format"].ToString() == "PDF")
                     {
-                        FilePath = bl.getUserReportPDF(data, t);
+                        FilePath = bl.getUserReportPDF(data, null);
                     }
                     else
                     {
-                        FilePath = bl.getUserReportExcel(data, t);
+                        FilePath = bl.getUserReportExcel(data, null);
                     }
                 }
 

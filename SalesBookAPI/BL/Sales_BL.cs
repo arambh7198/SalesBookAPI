@@ -57,7 +57,7 @@ namespace SalesBookAPI.BL
 
                 byte[] array;
 
-                ReportParameter Rp1 = new ReportParameter("Code", data["Code"].ToString());
+                Microsoft.Reporting.WebForms.ReportParameter Rp1 = new Microsoft.Reporting.WebForms.ReportParameter("Code", data["Code"].ToString());
 
                 using (ReportViewer rptvw = new ReportViewer())
                 {
