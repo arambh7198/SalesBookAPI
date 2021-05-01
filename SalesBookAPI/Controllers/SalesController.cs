@@ -171,6 +171,34 @@ namespace SalesBookAPI.Controllers
             }
         }
 
+        [ActionName("deleteItem")]
+        [HttpDelete]
+        public JObject deleteItem(int Code = -1)
+        {
+            try
+            {
+                JObject RtnObject = new JObject();
+                Token t = Request.Properties[SiteConfig.LoginKeyName] as Token;
+
+                if (Code != -1)
+                {
+                    Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
+                    IncludeParam.Add("Code", Code);
+                    IncludeParam.Add("SessionID", t.SessionID);
+                    DataTable dtData = StaticGeneral.GetDataTable("SalesItem_Delete", IncludeParam);
+
+                    RtnObject["Data"] = dtData.ToJArray();
+
+                    return RtnObject;
+                }
+                return RtnObject;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
 
         #region "Sales Invoice Report"
         [ActionName("GetInvoiceReport")]
@@ -196,7 +224,7 @@ namespace SalesBookAPI.Controllers
 
                 if (FilePath != null && FilePath.ToString() != "")
                 {
-                    RtnObject["FilePath"] = FilePath;
+                    RtnObject["FilePath"] = SiteConfig.InvoiceDownloadPath() +  FilePath;
                 }
                 return RtnObject;
             }

@@ -137,6 +137,11 @@ namespace SalesBookAPI.Custom
             return Convert.ToString(ConfigurationManager.AppSettings["CompanyLogoFilePath"]);
         }
 
+        public static string InvoiceDownloadPath()
+        {
+            return Convert.ToString(ConfigurationManager.AppSettings["InvoiceDownloadPath"]);
+        }
+
 
         #region Message Key
         public static string SMSFeedId
