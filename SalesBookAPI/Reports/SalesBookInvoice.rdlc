@@ -73,7 +73,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <ColSpan>7</ColSpan>
+                    <ColSpan>8</ColSpan>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
@@ -82,50 +82,7 @@
                 <TablixCell />
                 <TablixCell />
                 <TablixCell />
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox77">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Original</Value>
-                              <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>SeaGreen</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox77</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <TopBorder>
-                          <Style>Solid</Style>
-                        </TopBorder>
-                        <LeftBorder>
-                          <Style>Solid</Style>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Style>Solid</Style>
-                        </RightBorder>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
+                <TablixCell />
               </TablixCells>
             </TablixRow>
             <TablixRow>
@@ -137,10 +94,10 @@
                       <TablixBody>
                         <TablixColumns>
                           <TablixColumn>
-                            <Width>0.52431in</Width>
+                            <Width>0.88542in</Width>
                           </TablixColumn>
                           <TablixColumn>
-                            <Width>4.44098in</Width>
+                            <Width>4.07987in</Width>
                           </TablixColumn>
                           <TablixColumn>
                             <Width>2.48264in</Width>
@@ -175,7 +132,7 @@
                                           <TextRun>
                                             <Value>=Fields!CompanyName.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -183,7 +140,7 @@
                                           <TextRun>
                                             <Value xml:space="preserve"> </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -196,14 +153,14 @@
                                           <TextRun>
                                             <Value>=Fields!CompAdd1.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value xml:space="preserve"> </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -215,70 +172,70 @@
                                           <TextRun>
                                             <Value>=Fields!CompAdd2.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value xml:space="preserve"> </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CompCity.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value> , </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CompState.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value> , </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CompCountry.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value> - </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CompPIN.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value xml:space="preserve"> </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -290,28 +247,28 @@
                                           <TextRun>
                                             <Value>EmailID : - </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CompEmailID.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>   Mobile No. :-  </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CompMobileNo.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -382,7 +339,656 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>1.33333in</Height>
+              <Height>0.77083in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Tablix Name="Tablix9">
+                      <TablixBody>
+                        <TablixColumns>
+                          <TablixColumn>
+                            <Width>1.92707in</Width>
+                          </TablixColumn>
+                          <TablixColumn>
+                            <Width>2.07293in</Width>
+                          </TablixColumn>
+                        </TablixColumns>
+                        <TablixRows>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox27">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Order No.: </Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox27</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox32">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value />
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox32</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                            </TablixCells>
+                          </TablixRow>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox41">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Date:</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox41</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox43">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Payment : </Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox43</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                            </TablixCells>
+                          </TablixRow>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox38">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>L.R. No.</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox38</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox40">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>L R Dt.</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox40</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                            </TablixCells>
+                          </TablixRow>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox33">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Transporter</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox33</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox37">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>EWay Bill No.</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox37</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                            </TablixCells>
+                          </TablixRow>
+                        </TablixRows>
+                      </TablixBody>
+                      <TablixColumnHierarchy>
+                        <TablixMembers>
+                          <TablixMember />
+                          <TablixMember />
+                        </TablixMembers>
+                      </TablixColumnHierarchy>
+                      <TablixRowHierarchy>
+                        <TablixMembers>
+                          <TablixMember />
+                          <TablixMember />
+                          <TablixMember />
+                          <TablixMember />
+                        </TablixMembers>
+                      </TablixRowHierarchy>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Tablix>
+                    <ColSpan>3</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell>
+                  <CellContents>
+                    <Tablix Name="Tablix4">
+                      <TablixBody>
+                        <TablixColumns>
+                          <TablixColumn>
+                            <Width>1.95313in</Width>
+                          </TablixColumn>
+                          <TablixColumn>
+                            <Width>1.4948in</Width>
+                          </TablixColumn>
+                        </TablixColumns>
+                        <TablixRows>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox102">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Invoice No. : </Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontWeight>Bold</FontWeight>
+                                            </Style>
+                                          </TextRun>
+                                          <TextRun>
+                                            <Value>=Fields!InvoiceNo.Value</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontWeight>Bold</FontWeight>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox102</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <BottomBorder>
+                                        <Style>None</Style>
+                                      </BottomBorder>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox2">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Date : </Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontWeight>Bold</FontWeight>
+                                            </Style>
+                                          </TextRun>
+                                          <TextRun>
+                                            <Value>=Fields!InvoiceDate.Value</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontWeight>Bold</FontWeight>
+                                              <Format>dd/MM/yyyy</Format>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox2</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <BottomBorder>
+                                        <Style>None</Style>
+                                      </BottomBorder>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                            </TablixCells>
+                          </TablixRow>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox104">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Challan No. :</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox102</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <TopBorder>
+                                        <Style>None</Style>
+                                      </TopBorder>
+                                      <BottomBorder>
+                                        <Style>None</Style>
+                                      </BottomBorder>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="Textbox4">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Date: </Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox4</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <TopBorder>
+                                        <Style>None</Style>
+                                      </TopBorder>
+                                      <BottomBorder>
+                                        <Style>None</Style>
+                                      </BottomBorder>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixCell>
+                            </TablixCells>
+                          </TablixRow>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="InvoiceNo">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Despatch From</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>8pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>InvoiceNo</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <TopBorder>
+                                        <Style>None</Style>
+                                      </TopBorder>
+                                      <BottomBorder>
+                                        <Style>None</Style>
+                                      </BottomBorder>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                  <ColSpan>2</ColSpan>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell />
+                            </TablixCells>
+                          </TablixRow>
+                          <TablixRow>
+                            <Height>0.19271in</Height>
+                            <TablixCells>
+                              <TablixCell>
+                                <CellContents>
+                                  <Textbox Name="InvoiceDate">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>Despath To</Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>8pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>InvoiceDate</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <TopBorder>
+                                        <Style>None</Style>
+                                      </TopBorder>
+                                      <BottomBorder>
+                                        <Style>None</Style>
+                                      </BottomBorder>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                  <ColSpan>2</ColSpan>
+                                </CellContents>
+                              </TablixCell>
+                              <TablixCell />
+                            </TablixCells>
+                          </TablixRow>
+                        </TablixRows>
+                      </TablixBody>
+                      <TablixColumnHierarchy>
+                        <TablixMembers>
+                          <TablixMember />
+                          <TablixMember />
+                        </TablixMembers>
+                      </TablixColumnHierarchy>
+                      <TablixRowHierarchy>
+                        <TablixMembers>
+                          <TablixMember />
+                          <TablixMember />
+                          <TablixMember />
+                          <TablixMember />
+                        </TablixMembers>
+                      </TablixRowHierarchy>
+                      <DataSetName>DataSet1</DataSetName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Style>None</Style>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Style>Solid</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>Solid</Style>
+                        </RightBorder>
+                      </Style>
+                    </Tablix>
+                    <ColSpan>5</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>1.14583in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -401,7 +1007,7 @@
                         </TablixColumns>
                         <TablixRows>
                           <TablixRow>
-                            <Height>0.22222in</Height>
+                            <Height>0.19097in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -414,7 +1020,7 @@
                                           <TextRun>
                                             <Value>Details of Buyer (Receipient)</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -445,7 +1051,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.22222in</Height>
+                            <Height>0.19097in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -458,7 +1064,7 @@
                                           <TextRun>
                                             <Value>=Fields!CustomerName.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
@@ -492,7 +1098,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.22222in</Height>
+                            <Height>0.19097in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -505,7 +1111,7 @@
                                           <TextRun>
                                             <Value>=Fields!CustAdd1.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -539,7 +1145,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.22222in</Height>
+                            <Height>0.19097in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -552,7 +1158,7 @@
                                           <TextRun>
                                             <Value>=Fields!CustAdd2.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -586,7 +1192,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.22222in</Height>
+                            <Height>0.19097in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -599,49 +1205,49 @@
                                           <TextRun>
                                             <Value>=Fields!CustCity.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value> , </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CustState.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value> , </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CustCountry.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value> - </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CustPIN.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -675,7 +1281,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.22222in</Height>
+                            <Height>0.19097in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -688,15 +1294,17 @@
                                           <TextRun>
                                             <Value>Mobile No : </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
+                                              <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CustMobileNo.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
+                                              <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
@@ -773,312 +1381,21 @@
                 <TablixCell />
                 <TablixCell>
                   <CellContents>
-                    <Tablix Name="Tablix4">
-                      <TablixBody>
-                        <TablixColumns>
-                          <TablixColumn>
-                            <Width>2.10938in</Width>
-                          </TablixColumn>
-                          <TablixColumn>
-                            <Width>1.33855in</Width>
-                          </TablixColumn>
-                        </TablixColumns>
-                        <TablixRows>
-                          <TablixRow>
-                            <Height>0.22222in</Height>
-                            <TablixCells>
-                              <TablixCell>
-                                <CellContents>
-                                  <Textbox Name="Textbox102">
-                                    <CanGrow>true</CanGrow>
-                                    <KeepTogether>true</KeepTogether>
-                                    <Paragraphs>
-                                      <Paragraph>
-                                        <TextRuns>
-                                          <TextRun>
-                                            <Value>Invoice No. : </Value>
-                                            <Style>
-                                              <FontFamily>Tahoma</FontFamily>
-                                              <FontWeight>Bold</FontWeight>
-                                            </Style>
-                                          </TextRun>
-                                          <TextRun>
-                                            <Value>=Fields!InvoiceNo.Value</Value>
-                                            <Style>
-                                              <FontFamily>Tahoma</FontFamily>
-                                              <FontWeight>Bold</FontWeight>
-                                            </Style>
-                                          </TextRun>
-                                        </TextRuns>
-                                        <Style />
-                                      </Paragraph>
-                                    </Paragraphs>
-                                    <rd:DefaultName>Textbox102</rd:DefaultName>
-                                    <Style>
-                                      <Border>
-                                        <Color>LightGrey</Color>
-                                        <Style>Solid</Style>
-                                      </Border>
-                                      <BottomBorder>
-                                        <Style>None</Style>
-                                      </BottomBorder>
-                                      <PaddingLeft>2pt</PaddingLeft>
-                                      <PaddingRight>2pt</PaddingRight>
-                                      <PaddingTop>2pt</PaddingTop>
-                                      <PaddingBottom>2pt</PaddingBottom>
-                                    </Style>
-                                  </Textbox>
-                                  <ColSpan>2</ColSpan>
-                                </CellContents>
-                              </TablixCell>
-                              <TablixCell />
-                            </TablixCells>
-                          </TablixRow>
-                          <TablixRow>
-                            <Height>0.22222in</Height>
-                            <TablixCells>
-                              <TablixCell>
-                                <CellContents>
-                                  <Textbox Name="Textbox104">
-                                    <CanGrow>true</CanGrow>
-                                    <KeepTogether>true</KeepTogether>
-                                    <Paragraphs>
-                                      <Paragraph>
-                                        <TextRuns>
-                                          <TextRun>
-                                            <Value>Invoice Date : </Value>
-                                            <Style>
-                                              <FontFamily>Tahoma</FontFamily>
-                                              <FontWeight>Bold</FontWeight>
-                                            </Style>
-                                          </TextRun>
-                                          <TextRun>
-                                            <Value>=Fields!InvoiceDate.Value</Value>
-                                            <Style>
-                                              <FontFamily>Tahoma</FontFamily>
-                                              <FontWeight>Bold</FontWeight>
-                                              <Format>dd/MM/yyyy</Format>
-                                            </Style>
-                                          </TextRun>
-                                        </TextRuns>
-                                        <Style />
-                                      </Paragraph>
-                                    </Paragraphs>
-                                    <rd:DefaultName>Textbox102</rd:DefaultName>
-                                    <Style>
-                                      <Border>
-                                        <Color>LightGrey</Color>
-                                        <Style>Solid</Style>
-                                      </Border>
-                                      <TopBorder>
-                                        <Style>None</Style>
-                                      </TopBorder>
-                                      <BottomBorder>
-                                        <Style>None</Style>
-                                      </BottomBorder>
-                                      <PaddingLeft>2pt</PaddingLeft>
-                                      <PaddingRight>2pt</PaddingRight>
-                                      <PaddingTop>2pt</PaddingTop>
-                                      <PaddingBottom>2pt</PaddingBottom>
-                                    </Style>
-                                  </Textbox>
-                                  <ColSpan>2</ColSpan>
-                                </CellContents>
-                              </TablixCell>
-                              <TablixCell />
-                            </TablixCells>
-                          </TablixRow>
-                          <TablixRow>
-                            <Height>0.22222in</Height>
-                            <TablixCells>
-                              <TablixCell>
-                                <CellContents>
-                                  <Textbox Name="InvoiceNo">
-                                    <CanGrow>true</CanGrow>
-                                    <KeepTogether>true</KeepTogether>
-                                    <Paragraphs>
-                                      <Paragraph>
-                                        <TextRuns>
-                                          <TextRun>
-                                            <Value />
-                                            <Style />
-                                          </TextRun>
-                                        </TextRuns>
-                                        <Style />
-                                      </Paragraph>
-                                    </Paragraphs>
-                                    <rd:DefaultName>InvoiceNo</rd:DefaultName>
-                                    <Style>
-                                      <Border>
-                                        <Color>LightGrey</Color>
-                                        <Style>Solid</Style>
-                                      </Border>
-                                      <TopBorder>
-                                        <Style>None</Style>
-                                      </TopBorder>
-                                      <BottomBorder>
-                                        <Style>None</Style>
-                                      </BottomBorder>
-                                      <PaddingLeft>2pt</PaddingLeft>
-                                      <PaddingRight>2pt</PaddingRight>
-                                      <PaddingTop>2pt</PaddingTop>
-                                      <PaddingBottom>2pt</PaddingBottom>
-                                    </Style>
-                                  </Textbox>
-                                  <ColSpan>2</ColSpan>
-                                </CellContents>
-                              </TablixCell>
-                              <TablixCell />
-                            </TablixCells>
-                          </TablixRow>
-                          <TablixRow>
-                            <Height>0.22222in</Height>
-                            <TablixCells>
-                              <TablixCell>
-                                <CellContents>
-                                  <Textbox Name="InvoiceDate">
-                                    <CanGrow>true</CanGrow>
-                                    <KeepTogether>true</KeepTogether>
-                                    <Paragraphs>
-                                      <Paragraph>
-                                        <TextRuns>
-                                          <TextRun>
-                                            <Value />
-                                            <Style />
-                                          </TextRun>
-                                        </TextRuns>
-                                        <Style />
-                                      </Paragraph>
-                                    </Paragraphs>
-                                    <rd:DefaultName>InvoiceDate</rd:DefaultName>
-                                    <Style>
-                                      <Border>
-                                        <Color>LightGrey</Color>
-                                        <Style>Solid</Style>
-                                      </Border>
-                                      <TopBorder>
-                                        <Style>None</Style>
-                                      </TopBorder>
-                                      <BottomBorder>
-                                        <Style>None</Style>
-                                      </BottomBorder>
-                                      <PaddingLeft>2pt</PaddingLeft>
-                                      <PaddingRight>2pt</PaddingRight>
-                                      <PaddingTop>2pt</PaddingTop>
-                                      <PaddingBottom>2pt</PaddingBottom>
-                                    </Style>
-                                  </Textbox>
-                                  <ColSpan>2</ColSpan>
-                                </CellContents>
-                              </TablixCell>
-                              <TablixCell />
-                            </TablixCells>
-                          </TablixRow>
-                          <TablixRow>
-                            <Height>0.22222in</Height>
-                            <TablixCells>
-                              <TablixCell>
-                                <CellContents>
-                                  <Textbox Name="Textbox127">
-                                    <CanGrow>true</CanGrow>
-                                    <KeepTogether>true</KeepTogether>
-                                    <Paragraphs>
-                                      <Paragraph>
-                                        <TextRuns>
-                                          <TextRun>
-                                            <Value />
-                                            <Style />
-                                          </TextRun>
-                                        </TextRuns>
-                                        <Style />
-                                      </Paragraph>
-                                    </Paragraphs>
-                                    <rd:DefaultName>Textbox127</rd:DefaultName>
-                                    <Style>
-                                      <Border>
-                                        <Color>LightGrey</Color>
-                                        <Style>Solid</Style>
-                                      </Border>
-                                      <TopBorder>
-                                        <Style>None</Style>
-                                      </TopBorder>
-                                      <BottomBorder>
-                                        <Style>None</Style>
-                                      </BottomBorder>
-                                      <PaddingLeft>2pt</PaddingLeft>
-                                      <PaddingRight>2pt</PaddingRight>
-                                      <PaddingTop>2pt</PaddingTop>
-                                      <PaddingBottom>2pt</PaddingBottom>
-                                    </Style>
-                                  </Textbox>
-                                  <ColSpan>2</ColSpan>
-                                </CellContents>
-                              </TablixCell>
-                              <TablixCell />
-                            </TablixCells>
-                          </TablixRow>
-                          <TablixRow>
-                            <Height>0.22222in</Height>
-                            <TablixCells>
-                              <TablixCell>
-                                <CellContents>
-                                  <Textbox Name="Textbox103">
-                                    <CanGrow>true</CanGrow>
-                                    <KeepTogether>true</KeepTogether>
-                                    <Paragraphs>
-                                      <Paragraph>
-                                        <TextRuns>
-                                          <TextRun>
-                                            <Value />
-                                            <Style />
-                                          </TextRun>
-                                        </TextRuns>
-                                        <Style />
-                                      </Paragraph>
-                                    </Paragraphs>
-                                    <rd:DefaultName>Textbox103</rd:DefaultName>
-                                    <Style>
-                                      <Border>
-                                        <Color>LightGrey</Color>
-                                        <Style>Solid</Style>
-                                      </Border>
-                                      <TopBorder>
-                                        <Style>None</Style>
-                                      </TopBorder>
-                                      <BottomBorder>
-                                        <Style>None</Style>
-                                      </BottomBorder>
-                                      <PaddingLeft>2pt</PaddingLeft>
-                                      <PaddingRight>2pt</PaddingRight>
-                                      <PaddingTop>2pt</PaddingTop>
-                                      <PaddingBottom>2pt</PaddingBottom>
-                                    </Style>
-                                  </Textbox>
-                                  <ColSpan>2</ColSpan>
-                                </CellContents>
-                              </TablixCell>
-                              <TablixCell />
-                            </TablixCells>
-                          </TablixRow>
-                        </TablixRows>
-                      </TablixBody>
-                      <TablixColumnHierarchy>
-                        <TablixMembers>
-                          <TablixMember />
-                          <TablixMember />
-                        </TablixMembers>
-                      </TablixColumnHierarchy>
-                      <TablixRowHierarchy>
-                        <TablixMembers>
-                          <TablixMember />
-                          <TablixMember />
-                          <TablixMember />
-                          <TablixMember />
-                          <TablixMember />
-                          <TablixMember />
-                        </TablixMembers>
-                      </TablixRowHierarchy>
-                      <DataSetName>DataSet1</DataSetName>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -1095,9 +1412,14 @@
                         <RightBorder>
                           <Style>Solid</Style>
                         </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                    </Tablix>
+                    </Textbox>
                     <ColSpan>5</ColSpan>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
@@ -1120,7 +1442,7 @@
                             <TextRun>
                               <Value>GST No. : </Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1128,7 +1450,7 @@
                             <TextRun>
                               <Value>=Fields!CustGST.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1227,7 +1549,7 @@
                             <TextRun>
                               <Value>Sr.No.</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1272,7 +1594,7 @@
                             <TextRun>
                               <Value>Descriptions Of Goods</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1319,7 +1641,7 @@
                             <TextRun>
                               <Value>HSNCode</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1366,7 +1688,7 @@
                             <TextRun>
                               <Value>Qty</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1413,7 +1735,7 @@
                             <TextRun>
                               <Value>Unit</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1460,7 +1782,7 @@
                             <TextRun>
                               <Value>Rate</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1507,7 +1829,7 @@
                             <TextRun>
                               <Value>GST</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1554,7 +1876,7 @@
                             <TextRun>
                               <Value>Amount</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -1593,7 +1915,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.39583in</Height>
+              <Height>0.29166in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -1606,7 +1928,7 @@
                             <TextRun>
                               <Value>=Fields!RptSrNo.Value</Value>
                               <Style>
-                                <FontFamily>TAhoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1644,7 +1966,7 @@
                             <TextRun>
                               <Value>=Fields!ProductName.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1656,7 +1978,7 @@
                             <TextRun>
                               <Value>=Fields!ItemDescription.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1694,7 +2016,7 @@
                             <TextRun>
                               <Value>=Fields!HSNCode.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1732,7 +2054,7 @@
                             <TextRun>
                               <Value>=Fields!Qty.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1772,7 +2094,7 @@
                             <TextRun>
                               <Value>=Fields!UOMSymbol.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1812,7 +2134,7 @@
                             <TextRun>
                               <Value>=Fields!PerPrice.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <Format>n2</Format>
                                 <Language>hi-IN</Language>
@@ -1854,7 +2176,7 @@
                             <TextRun>
                               <Value>=Fields!TaxPerc.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
@@ -1894,7 +2216,7 @@
                             <TextRun>
                               <Value>=Fields!Amount.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <Format>n2</Format>
                                 <Language>hi-IN</Language>
@@ -1928,7 +2250,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>1.27041in</Height>
+              <Height>1.18708in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -1956,7 +2278,7 @@
                         </TablixColumns>
                         <TablixRows>
                           <TablixRow>
-                            <Height>0.34538in</Height>
+                            <Height>0.3176in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -1969,7 +2291,7 @@
                                           <TextRun>
                                             <Value>GST Code</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -2004,7 +2326,7 @@
                                           <TextRun>
                                             <Value>Net Amount</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -2039,7 +2361,7 @@
                                           <TextRun>
                                             <Value>%</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -2074,7 +2396,7 @@
                                           <TextRun>
                                             <Value>SGST</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -2109,7 +2431,7 @@
                                           <TextRun>
                                             <Value>%</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -2144,7 +2466,7 @@
                                           <TextRun>
                                             <Value>CGST</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -2171,7 +2493,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.57965in</Height>
+                            <Height>0.55187in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -2184,7 +2506,7 @@
                                           <TextRun>
                                             <Value>GST 18%</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -2216,7 +2538,7 @@
                                           <TextRun>
                                             <Value>=Fields!SubTotal.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <Format>n2</Format>
                                               <Language>hi-IN</Language>
@@ -2252,7 +2574,7 @@
                                           <TextRun>
                                             <Value>9%</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -2286,7 +2608,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotSGST.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <Format>n2</Format>
                                               <Language>hi-IN</Language>
@@ -2322,7 +2644,7 @@
                                           <TextRun>
                                             <Value>9%</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -2356,7 +2678,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotCGST.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <Format>n2</Format>
                                               <Language>hi-IN</Language>
@@ -2384,7 +2706,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.34538in</Height>
+                            <Height>0.3176in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -2397,6 +2719,7 @@
                                           <TextRun>
                                             <Value>Total :</Value>
                                             <Style>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
@@ -2428,7 +2751,7 @@
                                           <TextRun>
                                             <Value>=Fields!SubTotal.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                               <Format>n2</Format>
@@ -2465,6 +2788,7 @@
                                           <TextRun>
                                             <Value />
                                             <Style>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                               <Language>hi-IN</Language>
@@ -2500,7 +2824,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotSGST.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                               <Format>n2</Format>
@@ -2537,6 +2861,7 @@
                                           <TextRun>
                                             <Value />
                                             <Style>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                               <Language>hi-IN</Language>
@@ -2572,7 +2897,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotCGST.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                               <Format>n2</Format>
@@ -2682,7 +3007,7 @@
                         </TablixColumns>
                         <TablixRows>
                           <TablixRow>
-                            <Height>0.21174in</Height>
+                            <Height>0.19785in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -2695,7 +3020,7 @@
                                           <TextRun>
                                             <Value>Net Amount :</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
@@ -2727,7 +3052,7 @@
                                           <TextRun>
                                             <Value>=Fields!SubTotal.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                               <Format>n2</Format>
                                               <Language>hi-IN</Language>
@@ -2755,7 +3080,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.21174in</Height>
+                            <Height>0.19785in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -2768,7 +3093,7 @@
                                           <TextRun>
                                             <Value>SGST :</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
@@ -2799,7 +3124,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotSGST.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <Format>n2</Format>
                                               <Language>hi-IN</Language>
                                             </Style>
@@ -2826,7 +3151,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.21174in</Height>
+                            <Height>0.19785in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -2839,7 +3164,7 @@
                                           <TextRun>
                                             <Value>CGST :</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
@@ -2870,7 +3195,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotCGST.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <Format>n2</Format>
                                               <Language>hi-IN</Language>
                                             </Style>
@@ -2897,7 +3222,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.21174in</Height>
+                            <Height>0.19785in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -2910,7 +3235,7 @@
                                           <TextRun>
                                             <Value>Transport Chg. :</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
@@ -2941,7 +3266,7 @@
                                           <TextRun>
                                             <Value>=Fields!Transportation.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <Language>hi-IN</Language>
                                             </Style>
                                           </TextRun>
@@ -2967,7 +3292,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.21174in</Height>
+                            <Height>0.19785in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -2980,7 +3305,7 @@
                                           <TextRun>
                                             <Value>Discount :</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
@@ -3011,7 +3336,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotDiscount.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <Language>hi-IN</Language>
                                             </Style>
                                           </TextRun>
@@ -3037,7 +3362,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.21174in</Height>
+                            <Height>0.19785in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -3050,7 +3375,7 @@
                                           <TextRun>
                                             <Value>Total :</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
@@ -3082,7 +3407,7 @@
                                           <TextRun>
                                             <Value>=Fields!TotalAmount.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
@@ -3143,7 +3468,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.25in</Height>
+              <Height>0.20833in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -3156,7 +3481,7 @@
                             <TextRun>
                               <Value>Amount in Words : </Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -3164,7 +3489,7 @@
                             <TextRun>
                               <Value>=Fields!InvoiceAmtInWords.Value</Value>
                               <Style>
-                                <FontFamily>tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -3185,7 +3510,6 @@
                       </Style>
                     </Textbox>
                     <ColSpan>8</ColSpan>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
@@ -3198,7 +3522,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.73958in</Height>
+              <Height>0.6875in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -3214,7 +3538,7 @@
                         </TablixColumns>
                         <TablixRows>
                           <TablixRow>
-                            <Height>0.25521in</Height>
+                            <Height>0.22916in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -3227,7 +3551,7 @@
                                           <TextRun>
                                             <Value>GSTIN : </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3235,7 +3559,7 @@
                                           <TextRun>
                                             <Value>=Fields!CompGST.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3243,7 +3567,7 @@
                                           <TextRun>
                                             <Value>             PAN : </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3251,7 +3575,7 @@
                                           <TextRun>
                                             <Value>=Fields!CompPAN.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3282,7 +3606,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.48438in</Height>
+                            <Height>0.45833in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -3295,7 +3619,7 @@
                                           <TextRun>
                                             <Value>Bank Details :</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3332,7 +3656,7 @@
                                           <TextRun>
                                             <Value>=Fields!BankName.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3340,7 +3664,7 @@
                                           <TextRun>
                                             <Value> , </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3353,7 +3677,7 @@
                                           <TextRun>
                                             <Value>=Fields!BankCity.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3361,7 +3685,7 @@
                                           <TextRun>
                                             <Value>,</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3369,7 +3693,7 @@
                                           <TextRun>
                                             <Value>=Fields!BankState.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3377,7 +3701,7 @@
                                           <TextRun>
                                             <Value>,</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3385,7 +3709,7 @@
                                           <TextRun>
                                             <Value>=Fields!BankCountry.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3393,7 +3717,7 @@
                                           <TextRun>
                                             <Value xml:space="preserve"> </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3406,7 +3730,7 @@
                                           <TextRun>
                                             <Value>A/C No.: </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3414,15 +3738,28 @@
                                           <TextRun>
                                             <Value>=Fields!AccNo.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
-                                            <Value>         IFSCCode : </Value>
+                                            <Value xml:space="preserve">         </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
+                                              <FontSize>9pt</FontSize>
+                                              <FontWeight>Bold</FontWeight>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>IFSCCode : </Value>
+                                            <Style>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3430,7 +3767,7 @@
                                           <TextRun>
                                             <Value>=Fields!IFSCCode.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3438,7 +3775,7 @@
                                           <TextRun>
                                             <Value xml:space="preserve"> </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
@@ -3502,7 +3839,8 @@
                             <TextRun>
                               <Value>GST PAYMBLE ON REVERSE CHARGES | N.A.|</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -3516,7 +3854,8 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3529,7 +3868,8 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3540,9 +3880,24 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+                              <Value />
+                              <Style>
+                                <FontFamily>calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
                               <Value>E &amp; O.E&gt;</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3572,7 +3927,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.73334in</Height>
+              <Height>0.68126in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -3585,7 +3940,7 @@
                             <TextRun>
                               <Value>1) Goods once sold Will not be taken back or exchanged</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3596,7 +3951,7 @@
                             <TextRun>
                               <Value>2) Cheque return charges will be Rs. 500/-</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3607,7 +3962,7 @@
                             <TextRun>
                               <Value>3) Interest @ 24% will be charged on bills not paid within 30 days.</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>calibri</FontFamily>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3647,7 +4002,7 @@
                         </TablixColumns>
                         <TablixRows>
                           <TablixRow>
-                            <Height>0.24653in</Height>
+                            <Height>0.22917in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -3660,14 +4015,14 @@
                                           <TextRun>
                                             <Value>FOR </Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
                                           <TextRun>
                                             <Value>=Fields!CompanyName.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                             </Style>
                                           </TextRun>
@@ -3700,7 +4055,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.30903in</Height>
+                            <Height>0.29167in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -3722,7 +4077,7 @@
                             </TablixCells>
                           </TablixRow>
                           <TablixRow>
-                            <Height>0.17778in</Height>
+                            <Height>0.16042in</Height>
                             <TablixCells>
                               <TablixCell>
                                 <CellContents>
@@ -3735,7 +4090,7 @@
                                           <TextRun>
                                             <Value>Authorised Signatory</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
                                             </Style>
                                           </TextRun>
@@ -3843,6 +4198,9 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
                   <Group Name="Details" />
                 </TablixMember>
                 <TablixMember>
@@ -3862,7 +4220,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Height>6.03499in</Height>
+        <Height>6.28499in</Height>
         <Width>7.44793in</Width>
         <Style>
           <Border>
@@ -3871,7 +4229,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>6.03499in</Height>
+    <Height>6.28499in</Height>
     <Style />
   </Body>
   <Width>7.44793in</Width>
