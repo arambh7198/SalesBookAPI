@@ -69,7 +69,7 @@ namespace SalesBookAPI.Controllers
                 Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
                 IncludeParam.Add("UserCode", t.UserCode);
                 IncludeParam.Add("SessionID", t.SessionID);
-                IncludeParam.Add("SalesCode", data["Code"].ToString());
+                IncludeParam.Add("QuotCode", data["Code"].ToString());
 
                 DataSet ds = StaticGeneral.GetDataSet("PGetQuotForEdit", null, IncludeParam);
                 if (ds.Tables.Count > 1)
@@ -116,7 +116,7 @@ namespace SalesBookAPI.Controllers
                 DataSet ds = StaticGeneral.GetDataSet("pSaveQuotationInfo", null, IncludeParam);
                 SetTableNames(ds);
                 List<string> Tables = new List<string>();
-                Tables.Add("Sales");
+                Tables.Add("Quotation");
                 return ds.toJObjectWithRelations(Tables);
             }
             catch (Exception)
@@ -129,7 +129,7 @@ namespace SalesBookAPI.Controllers
         void SetTableNames(DataSet ds)
         {
 
-            ds.Tables[0].TableName = "Quotations";
+            ds.Tables[0].TableName = "Quotation";
             ds.Tables[1].TableName = "QuotDetails";
 
 
@@ -235,5 +235,4 @@ namespace SalesBookAPI.Controllers
         }
         #endregion
     }
-}
 }
