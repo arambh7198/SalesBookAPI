@@ -266,6 +266,7 @@
     <Compile Include="BL\CustVend_BL.cs" />
     <Compile Include="BL\Login_BL.cs" />
     <Compile Include="BL\Product_BL.cs" />
+    <Compile Include="BL\Quotation_BL.cs" />
     <Compile Include="BL\Sales_BL.cs" />
     <Compile Include="Controllers\BankController.cs" />
     <Compile Include="Controllers\CommonController.cs" />
@@ -273,6 +274,7 @@
     <Compile Include="Controllers\CustVendController.cs" />
     <Compile Include="Controllers\loginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\QuotationController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Custom\Encrypto.cs" />
     <Compile Include="Custom\Extensions.cs" />
@@ -370,6 +372,7 @@
     <Content Include="SalesInvoiceDataSource.xsc">
       <DependentUpon>SalesInvoiceDataSource.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\Sales.pubxml" />
     <None Include="SalesInvoiceDataSource.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>

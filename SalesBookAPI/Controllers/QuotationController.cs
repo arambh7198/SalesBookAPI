@@ -14,9 +14,9 @@ using System.Xml;
 
 namespace SalesBookAPI.Controllers
 {
-    public class SalesController : ApiController
+    public class QuotationController : ApiController
     {
-        Sales_BL bl = new Sales_BL();
+        Quotation_BL bl = new Quotation_BL();
         [ActionName("getData")]
         [HttpPost]
         public JObject GetData([FromBody]JObject data)
@@ -36,10 +36,10 @@ namespace SalesBookAPI.Controllers
                     IncludeParam.Add("ResultType", "1");
                     IncludeParam.Add("SessionID", t.SessionID);
                     IncludeParam.Add("LoginCode", t.UserCode);
-                    DataTable dtDataCount = StaticGeneral.GetDataTable("Sales_Select", data, ExcludeParam, IncludeParam);
+                    DataTable dtDataCount = StaticGeneral.GetDataTable("Quotation_Select", data, ExcludeParam, IncludeParam);
 
                     IncludeParam["ResultType"] = "2";
-                    DataTable dtData = StaticGeneral.GetDataTable("Sales_Select", data, ExcludeParam, IncludeParam);
+                    DataTable dtData = StaticGeneral.GetDataTable("Quotation_Select", data, ExcludeParam, IncludeParam);
 
                     RtnObject["Data"] = dtData.ToJArray();
                     RtnObject["DataCount"] = dtDataCount.Rows[0]["totalRowsCount"].ToString();
@@ -56,10 +56,10 @@ namespace SalesBookAPI.Controllers
 
         #region "Sales Post"
 
-        [ActionName("getSalesForEdit")]
+        [ActionName("getQuotationForEdit")]
         [HttpPost]
 
-        public JObject getSalesForEdit([FromBody]JObject data)
+        public JObject getQuotationForEdit([FromBody]JObject data)
         {
             try
             {
@@ -71,7 +71,7 @@ namespace SalesBookAPI.Controllers
                 IncludeParam.Add("SessionID", t.SessionID);
                 IncludeParam.Add("SalesCode", data["Code"].ToString());
 
-                DataSet ds = StaticGeneral.GetDataSet("PGetSalesForEdit", null, IncludeParam);
+                DataSet ds = StaticGeneral.GetDataSet("PGetQuotForEdit", null, IncludeParam);
                 if (ds.Tables.Count > 1)
                 {
                     SetTableNames(ds);
@@ -95,10 +95,10 @@ namespace SalesBookAPI.Controllers
 
 
 
-        [ActionName("saveSales")]
+        [ActionName("saveQuotation")]
         [HttpPost]
 
-        public JObject saveSales([FromBody]JObject data)
+        public JObject saveQuotation([FromBody]JObject data)
         {
             try
             {
@@ -112,8 +112,8 @@ namespace SalesBookAPI.Controllers
 
                 XmlDocument doc = (XmlDocument)JsonConvert.DeserializeXmlNode(rootObj.ToString());
 
-                IncludeParam.Add("Sales", doc.InnerXml.ToString());
-                DataSet ds = StaticGeneral.GetDataSet("pSaveSalesInfo", null, IncludeParam);
+                IncludeParam.Add("Quotation", doc.InnerXml.ToString());
+                DataSet ds = StaticGeneral.GetDataSet("pSaveQuotationInfo", null, IncludeParam);
                 SetTableNames(ds);
                 List<string> Tables = new List<string>();
                 Tables.Add("Sales");
@@ -129,11 +129,11 @@ namespace SalesBookAPI.Controllers
         void SetTableNames(DataSet ds)
         {
 
-            ds.Tables[0].TableName = "Sales";
-            ds.Tables[1].TableName = "SalesDetails";
+            ds.Tables[0].TableName = "Quotations";
+            ds.Tables[1].TableName = "QuotDetails";
 
 
-            ds.Relations.Add(new DataRelation("SalesDetails", new DataColumn[] { ds.Tables[0].Columns["Code"] }, new DataColumn[] { ds.Tables[1].Columns["SalesCode"] }));
+            ds.Relations.Add(new DataRelation("QuotDetails", new DataColumn[] { ds.Tables[0].Columns["Code"] }, new DataColumn[] { ds.Tables[1].Columns["QuotCode"] }));
 
             ds.AcceptChanges();
         }
@@ -185,7 +185,7 @@ namespace SalesBookAPI.Controllers
                     Dictionary<string, object> IncludeParam = new Dictionary<string, object>();
                     IncludeParam.Add("Code", Code);
                     IncludeParam.Add("SessionID", t.SessionID);
-                    DataTable dtData = StaticGeneral.GetDataTable("SalesItem_Delete", IncludeParam);
+                    DataTable dtData = StaticGeneral.GetDataTable("QuotItem_Delete", IncludeParam);
 
                     RtnObject["Data"] = dtData.ToJArray();
 
@@ -224,7 +224,7 @@ namespace SalesBookAPI.Controllers
 
                 if (FilePath != null && FilePath.ToString() != "")
                 {
-                    RtnObject["FilePath"] = SiteConfig.InvoiceDownloadPath() +  FilePath;
+                    RtnObject["FilePath"] = SiteConfig.InvoiceDownloadPath() + FilePath;
                 }
                 return RtnObject;
             }
@@ -235,4 +235,5 @@ namespace SalesBookAPI.Controllers
         }
         #endregion
     }
+}
 }
