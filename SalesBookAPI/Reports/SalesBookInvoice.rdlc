@@ -382,6 +382,9 @@
                                         <Color>LightGrey</Color>
                                         <Style>None</Style>
                                       </Border>
+                                      <LeftBorder>
+                                        <Style>Solid</Style>
+                                      </LeftBorder>
                                       <PaddingLeft>2pt</PaddingLeft>
                                       <PaddingRight>2pt</PaddingRight>
                                       <PaddingTop>2pt</PaddingTop>
@@ -453,6 +456,9 @@
                                         <Color>LightGrey</Color>
                                         <Style>None</Style>
                                       </Border>
+                                      <LeftBorder>
+                                        <Style>Solid</Style>
+                                      </LeftBorder>
                                       <PaddingLeft>2pt</PaddingLeft>
                                       <PaddingRight>2pt</PaddingRight>
                                       <PaddingTop>2pt</PaddingTop>
@@ -524,6 +530,9 @@
                                         <Color>LightGrey</Color>
                                         <Style>None</Style>
                                       </Border>
+                                      <LeftBorder>
+                                        <Style>Solid</Style>
+                                      </LeftBorder>
                                       <PaddingLeft>2pt</PaddingLeft>
                                       <PaddingRight>2pt</PaddingRight>
                                       <PaddingTop>2pt</PaddingTop>
@@ -595,6 +604,9 @@
                                         <Color>LightGrey</Color>
                                         <Style>None</Style>
                                       </Border>
+                                      <LeftBorder>
+                                        <Style>Solid</Style>
+                                      </LeftBorder>
                                       <PaddingLeft>2pt</PaddingLeft>
                                       <PaddingRight>2pt</PaddingRight>
                                       <PaddingTop>2pt</PaddingTop>
@@ -658,6 +670,9 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+                        <LeftBorder>
+                          <Style>Solid</Style>
+                        </LeftBorder>
                       </Style>
                     </Tablix>
                     <ColSpan>3</ColSpan>
@@ -1419,7 +1434,6 @@
                       </Style>
                     </Textbox>
                     <ColSpan>5</ColSpan>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
@@ -2464,7 +2478,7 @@
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>CGST</Value>
+                                            <Value>=IIF(Fields!ApplyIGST.Value = "1","IGST","CGST")</Value>
                                             <Style>
                                               <FontFamily>calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
@@ -2642,7 +2656,7 @@
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>9%</Value>
+                                            <Value>=IIF(Fields!ApplyIGST.Value = "1","18%","9%")</Value>
                                             <Style>
                                               <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
@@ -2676,7 +2690,7 @@
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>=Fields!TotCGST.Value</Value>
+                                            <Value>=IIF(Fields!ApplyIGST.Value = "1",Fields!TotIGST.Value,Fields!TotCGST.Value)</Value>
                                             <Style>
                                               <FontFamily>calibri</FontFamily>
                                               <FontSize>9pt</FontSize>
@@ -2931,8 +2945,16 @@
                         <TablixMembers>
                           <TablixMember />
                           <TablixMember />
-                          <TablixMember />
-                          <TablixMember />
+                          <TablixMember>
+                            <Visibility>
+                              <Hidden>=IIF(Fields!ApplyIGST.Value = "1",TRUE,FALSE)</Hidden>
+                            </Visibility>
+                          </TablixMember>
+                          <TablixMember>
+                            <Visibility>
+                              <Hidden>=IIF(Fields!ApplyIGST.Value = "1",TRUE,FALSE)</Hidden>
+                            </Visibility>
+                          </TablixMember>
                           <TablixMember />
                           <TablixMember />
                         </TablixMembers>
@@ -3162,7 +3184,7 @@
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>CGST :</Value>
+                                            <Value>=IIF(Fields!ApplyIGST.Value = "1","IGST","CGST")</Value>
                                             <Style>
                                               <FontFamily>calibri</FontFamily>
                                             </Style>
@@ -3193,7 +3215,7 @@
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>=Fields!TotCGST.Value</Value>
+                                            <Value>=IIF(Fields!ApplyIGST.Value = "1",Fields!TotIGST.Value,Fields!TotCGST.Value)</Value>
                                             <Style>
                                               <FontFamily>calibri</FontFamily>
                                               <Format>n2</Format>
@@ -3443,7 +3465,11 @@
                       <TablixRowHierarchy>
                         <TablixMembers>
                           <TablixMember />
-                          <TablixMember />
+                          <TablixMember>
+                            <Visibility>
+                              <Hidden>=IIF(Fields!ApplyIGST.Value = "1",TRUE,FALSE)</Hidden>
+                            </Visibility>
+                          </TablixMember>
                           <TablixMember />
                           <TablixMember />
                           <TablixMember />
@@ -4515,10 +4541,14 @@
           <DataField>InvoiceAmtInWords</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ApplyIGST">
+          <DataField>ApplyIGST</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>SalesInvoiceDataSource</rd:DataSetName>
-        <rd:SchemaPath>D:\D Drive\MyWork\SalesBookAPI\SalesBookAPI\SalesInvoiceDataSource.xsd</rd:SchemaPath>
+        <rd:SchemaPath>E:\GITProjects\SalesBook\API\SalesBookAPI\SalesInvoiceDataSource.xsd</rd:SchemaPath>
         <rd:TableName>pRpt_Sales</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

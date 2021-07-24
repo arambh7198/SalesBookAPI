@@ -442,6 +442,8 @@ namespace SalesBookAPI {
             
             private global::System.Data.DataColumn columnInvoiceAmtInWords;
             
+            private global::System.Data.DataColumn columnApplyIGST;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public pRpt_SalesDataTable() {
@@ -989,6 +991,14 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ApplyIGSTColumn {
+                get {
+                    return this.columnApplyIGST;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1088,7 +1098,8 @@ namespace SalesBookAPI {
                         decimal Transportation, 
                         decimal TotDiscount, 
                         decimal TotalAmount, 
-                        string InvoiceAmtInWords) {
+                        string InvoiceAmtInWords, 
+                        bool ApplyIGST) {
                 pRpt_SalesRow rowpRpt_SalesRow = ((pRpt_SalesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Code,
@@ -1154,7 +1165,8 @@ namespace SalesBookAPI {
                         Transportation,
                         TotDiscount,
                         TotalAmount,
-                        InvoiceAmtInWords};
+                        InvoiceAmtInWords,
+                        ApplyIGST};
                 rowpRpt_SalesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpRpt_SalesRow);
                 return rowpRpt_SalesRow;
@@ -1248,6 +1260,7 @@ namespace SalesBookAPI {
                 this.columnTotDiscount = base.Columns["TotDiscount"];
                 this.columnTotalAmount = base.Columns["TotalAmount"];
                 this.columnInvoiceAmtInWords = base.Columns["InvoiceAmtInWords"];
+                this.columnApplyIGST = base.Columns["ApplyIGST"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1381,6 +1394,8 @@ namespace SalesBookAPI {
                 base.Columns.Add(this.columnTotalAmount);
                 this.columnInvoiceAmtInWords = new global::System.Data.DataColumn("InvoiceAmtInWords", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnInvoiceAmtInWords);
+                this.columnApplyIGST = new global::System.Data.DataColumn("ApplyIGST", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnApplyIGST);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCode}, true));
                 this.columnCode.AllowDBNull = false;
@@ -3826,6 +3841,22 @@ namespace SalesBookAPI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool ApplyIGST {
+                get {
+                    try {
+                        return ((bool)(this[this.tablepRpt_Sales.ApplyIGSTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ApplyIGST\' in table \'pRpt_Sales\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepRpt_Sales.ApplyIGSTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsInvoiceNoNull() {
                 return this.IsNull(this.tablepRpt_Sales.InvoiceNoColumn);
             }
@@ -4578,6 +4609,18 @@ namespace SalesBookAPI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetInvoiceAmtInWordsNull() {
                 this[this.tablepRpt_Sales.InvoiceAmtInWordsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsApplyIGSTNull() {
+                return this.IsNull(this.tablepRpt_Sales.ApplyIGSTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetApplyIGSTNull() {
+                this[this.tablepRpt_Sales.ApplyIGSTColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -6600,6 +6643,7 @@ namespace SalesBookAPI.SalesInvoiceDataSourceTableAdapters {
             tableMapping.ColumnMappings.Add("TotDiscount", "TotDiscount");
             tableMapping.ColumnMappings.Add("TotalAmount", "TotalAmount");
             tableMapping.ColumnMappings.Add("InvoiceAmtInWords", "InvoiceAmtInWords");
+            tableMapping.ColumnMappings.Add("ApplyIGST", "ApplyIGST");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

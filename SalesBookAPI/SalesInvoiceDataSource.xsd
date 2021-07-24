@@ -88,6 +88,7 @@
               <Mapping SourceColumn="TotDiscount" DataSetColumn="TotDiscount" />
               <Mapping SourceColumn="TotalAmount" DataSetColumn="TotalAmount" />
               <Mapping SourceColumn="InvoiceAmtInWords" DataSetColumn="InvoiceAmtInWords" />
+              <Mapping SourceColumn="ApplyIGST" DataSetColumn="ApplyIGST" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -182,7 +183,7 @@
   <xs:element name="SalesInvoiceDataSource" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SalesInvoiceDataSource" msprop:Generator_UserDSName="SalesInvoiceDataSource">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="pRpt_Sales" msprop:Generator_TableClassName="pRpt_SalesDataTable" msprop:Generator_TableVarName="tablepRpt_Sales" msprop:Generator_TablePropName="pRpt_Sales" msprop:Generator_RowDeletingName="pRpt_SalesRowDeleting" msprop:Generator_RowChangingName="pRpt_SalesRowChanging" msprop:Generator_RowEvHandlerName="pRpt_SalesRowChangeEventHandler" msprop:Generator_RowDeletedName="pRpt_SalesRowDeleted" msprop:Generator_UserTableName="pRpt_Sales" msprop:Generator_RowChangedName="pRpt_SalesRowChanged" msprop:Generator_RowEvArgName="pRpt_SalesRowChangeEvent" msprop:Generator_RowClassName="pRpt_SalesRow">
+        <xs:element name="pRpt_Sales" msprop:Generator_TableClassName="pRpt_SalesDataTable" msprop:Generator_TableVarName="tablepRpt_Sales" msprop:Generator_RowChangedName="pRpt_SalesRowChanged" msprop:Generator_TablePropName="pRpt_Sales" msprop:Generator_RowDeletingName="pRpt_SalesRowDeleting" msprop:Generator_RowChangingName="pRpt_SalesRowChanging" msprop:Generator_RowEvHandlerName="pRpt_SalesRowChangeEventHandler" msprop:Generator_RowDeletedName="pRpt_SalesRowDeleted" msprop:Generator_RowClassName="pRpt_SalesRow" msprop:Generator_UserTableName="pRpt_Sales" msprop:Generator_RowEvArgName="pRpt_SalesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:int" />
@@ -489,10 +490,11 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="ApplyIGST" msprop:Generator_ColumnVarNameInTable="columnApplyIGST" msprop:Generator_ColumnPropNameInRow="ApplyIGST" msprop:Generator_ColumnPropNameInTable="ApplyIGSTColumn" msprop:Generator_UserColumnName="ApplyIGST" type="xs:boolean" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="pRpt_Quotation" msprop:Generator_TableClassName="pRpt_QuotationDataTable" msprop:Generator_TableVarName="tablepRpt_Quotation" msprop:Generator_TablePropName="pRpt_Quotation" msprop:Generator_RowDeletingName="pRpt_QuotationRowDeleting" msprop:Generator_RowChangingName="pRpt_QuotationRowChanging" msprop:Generator_RowEvHandlerName="pRpt_QuotationRowChangeEventHandler" msprop:Generator_RowDeletedName="pRpt_QuotationRowDeleted" msprop:Generator_UserTableName="pRpt_Quotation" msprop:Generator_RowChangedName="pRpt_QuotationRowChanged" msprop:Generator_RowEvArgName="pRpt_QuotationRowChangeEvent" msprop:Generator_RowClassName="pRpt_QuotationRow">
+        <xs:element name="pRpt_Quotation" msprop:Generator_TableClassName="pRpt_QuotationDataTable" msprop:Generator_TableVarName="tablepRpt_Quotation" msprop:Generator_RowChangedName="pRpt_QuotationRowChanged" msprop:Generator_TablePropName="pRpt_Quotation" msprop:Generator_RowDeletingName="pRpt_QuotationRowDeleting" msprop:Generator_RowChangingName="pRpt_QuotationRowChanging" msprop:Generator_RowEvHandlerName="pRpt_QuotationRowChangeEventHandler" msprop:Generator_RowDeletedName="pRpt_QuotationRowDeleted" msprop:Generator_RowClassName="pRpt_QuotationRow" msprop:Generator_UserTableName="pRpt_Quotation" msprop:Generator_RowEvArgName="pRpt_QuotationRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:int" />
