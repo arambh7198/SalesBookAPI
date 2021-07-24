@@ -383,7 +383,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reports\Quotation.rdlc" />
+    <Content Include="Reports\Quotations.rdlc" />
     <EmbeddedResource Include="Reports\SalesInvoice.rdlc" />
   </ItemGroup>
   <ItemGroup>
